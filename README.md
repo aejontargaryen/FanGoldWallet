@@ -1,19 +1,19 @@
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/seredat/karbowanecwallet.git
+git clone https://github.com/zirtysperzys/draegonglasswallet.git
 ```
 
 **2. Set symbolic link to coin sources at the same level as `src`. For example:**
 
 ```
-ln -s ../karbowanec cryptonote
+ln -s ../DRGL cryptonote
 ```
 
 Alternative way is to create git submodule:
 
 ```
-git submodule add https://github.com/seredat/karbowanec.git cryptonote
+git submodule add https://github.com/zirtysperzys/DRGL.git cryptonote
 ```
 
 **3. Build**
