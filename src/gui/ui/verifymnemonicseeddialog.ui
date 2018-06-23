@@ -23,7 +23,7 @@
    <item row="0" column="0" colspan="2">
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>This is mnemonic seed of your wallet. Write it down carefully. It allows to restore your wallet.</string>
+      <string>This is the mnemonic seed of your wallet. Write it down carefully. It allows to restore your wallet.</string>
      </property>
     </widget>
    </item>

@@ -48,7 +48,6 @@ public:
   QString getCurrentRemoteNode() const;
   QString getCurrentPool() const;
   quint16 getMiningThreads() const;
-  QString getCurrentTheme() const;
 
   bool isEncrypted() const;
   bool isStartOnLoginEnabled() const;

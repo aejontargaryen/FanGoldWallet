@@ -2,7 +2,4 @@
 	path = cryptonote
 	url = https://github.com/ZirtysPerzys/DRGL.git
 	branch = Longclaw
-[submodule "libqrencode"]
-	path = libqrencode
-	url = https://github.com/fukuchi/libqrencode.git
-	branch = 3.4
+

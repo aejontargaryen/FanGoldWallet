@@ -55,7 +55,7 @@
         <translation>Баланс счета</translation>
     </message>
     <message>
-        <source> krb</source>
+        <source> DRGL</source>
         <translation> крб.</translation>
     </message>
     <message>
@@ -68,7 +68,7 @@
     </message>
     <message>
         <source>0.00</source>
-        <translation type="unfinished">0.00</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -165,10 +165,6 @@
     </message>
     <message>
         <source>Français</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Português</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -273,12 +269,12 @@
         <translation>Добавить узел</translation>
     </message>
     <message>
-        <source>Remove node</source>
-        <translation>Удалить узел</translation>
+        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 KRB.</source>
+        <translation>Кошелек будет подключаться к удаленному узлу в локальной или глобальной сети. Выберите узел или укажите IP адрес или домен и порт чтобы добавить новый. В этом режиме кошелек платит комиссию узлу в размере 0,25% от суммы транзакции, но не более 10 крб.</translation>
     </message>
     <message>
-        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 1 KRB.</source>
-        <translation>Кошелек будет подключаться к удаленному узлу в локальной или глобальной сети. Выберите узел или укажите IP адрес или домен и порт чтобы добавить новый. В этом режиме кошелек платит комиссию узлу в размере 0,25% от суммы транзакции, но не более 1 крб.</translation>
+        <source>Remove node</source>
+        <translation>Удалить узел</translation>
     </message>
 </context>
 <context>
@@ -290,7 +286,7 @@
     <message>
         <source>%1 wallet is saving data.
 Please wait...</source>
-        <translation>Кошелек %1 сохраняет данные.
+        <translation>Кошелек сохраняет данные.
 Подождите пожалуйста...</translation>
     </message>
 </context>
@@ -329,11 +325,11 @@ Please wait...</source>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Путь к кошельку:</translation>
+        <translation>Путь к кошельку:</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -342,14 +338,6 @@ Please wait...</source>
     <message>
         <source>OK</source>
         <translation>Хорошо</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Где сохранить файл  нового кошелька:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Выбрать каталог</translation>
     </message>
 </context>
 <context>
@@ -360,7 +348,7 @@ Please wait...</source>
     </message>
     <message>
         <source>...</source>
-        <translation type="obsolete">...</translation>
+        <translation type="unfinished">...</translation>
     </message>
     <message>
         <source>Key:</source>
@@ -368,7 +356,7 @@ Please wait...</source>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Путь к кошельку:</translation>
+        <translation>Путь к кошельку:</translation>
     </message>
     <message>
         <source>Import a tracking key of a wallet to see all its incoming transactions. It doesn&apos;t allow spending funds.</source>
@@ -381,14 +369,6 @@ Please wait...</source>
     <message>
         <source>OK</source>
         <translation>Хорошо</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Где сохранить файл  нового кошелька:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Выбрать каталог</translation>
     </message>
 </context>
 <context>
@@ -554,7 +534,7 @@ Please wait...</source>
     </message>
     <message>
         <source>Change language</source>
-        <translation type="vanished">Изменить язык</translation>
+        <translation>Изменить язык</translation>
     </message>
     <message>
         <source>Show private key</source>
@@ -627,14 +607,6 @@ Please wait...</source>
     <message>
         <source>Start pool mining automatically</source>
         <translation>Запускать майнинг при старте</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Кошелек</translation>
-    </message>
-    <message>
-        <source>Sweep unmixable</source>
-        <translation>Убрать несмешиваемые</translation>
     </message>
 </context>
 <context>
@@ -816,25 +788,6 @@ Please wait...</source>
     </message>
 </context>
 <context>
-    <name>NoWalletFrame</name>
-    <message>
-        <source>Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Welcome to Karbo Wallet!</source>
-        <translation>Добро пожаловать в кошелек Карбованца!</translation>
-    </message>
-    <message>
-        <source>Create wallet</source>
-        <translation>Создать кошелек</translation>
-    </message>
-    <message>
-        <source>Open wallet</source>
-        <translation>Открыть кошелек</translation>
-    </message>
-</context>
-<context>
     <name>OpenUriDialog</name>
     <message>
         <source>Open payment request</source>
@@ -842,7 +795,7 @@ Please wait...</source>
     </message>
     <message>
         <source>URI:</source>
-        <translation>URI:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -886,14 +839,6 @@ Please wait...</source>
     <message>
         <source>Available balance:</source>
         <translation>Доступный баланс:</translation>
-    </message>
-    <message>
-        <source>Unmixable dust:</source>
-        <translation>Несмешиваемое:</translation>
-    </message>
-    <message>
-        <source>0.00</source>
-        <translation>0.00</translation>
     </message>
 </context>
 <context>
@@ -964,8 +909,8 @@ Please wait...</source>
         <translation>Загружается блокчейн...</translation>
     </message>
     <message>
-        <source>%1 wallet already running or cannot create lock file %2. Check your permissions.</source>
-        <translation>Кошелек Карбованца уже запущен либо не может создать файл блокировки %2. Проверьте права на запись.</translation>
+        <source>%1 wallet already running</source>
+        <translation>Кошелек Карбованца уже запущен</translation>
     </message>
     <message>
         <source>New version available</source>
@@ -1045,11 +990,11 @@ Do you want to go to download page?</source>
     </message>
     <message>
         <source>...</source>
-        <translation type="obsolete">...</translation>
+        <translation type="unfinished">...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Путь к кошельку:</translation>
+        <translation>Путь к кошельку:</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1058,14 +1003,6 @@ Do you want to go to download page?</source>
     <message>
         <source>OK</source>
         <translation>Хорошо</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Где сохранить файл  нового кошелька:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Выбрать каталог</translation>
     </message>
 </context>
 <context>
@@ -1352,10 +1289,6 @@ Do you want to go to download page?</source>
         <source>Contact with such label already exists.</source>
         <translation>Контакт с таким названием уже есть.</translation>
     </message>
-    <message>
-        <source>&amp;Pay to</source>
-        <translation>&amp;Заплатить этому контакту</translation>
-    </message>
 </context>
 <context>
     <name>WalletGui::AddressBookModel</name>
@@ -1499,11 +1432,7 @@ Do you want to go to download page?</source>
     </message>
     <message>
         <source>Tracking wallets (*.trackingwallet)</source>
-        <translation type="vanished">Кошельки слежения (*.trackingwallet)</translation>
-    </message>
-    <message>
-        <source>Tracking wallets (*.wallet)</source>
-        <translation>Кошельки слежения (*.wallet)</translation>
+        <translation>Кошельки слежения (*.trackingwallet)</translation>
     </message>
 </context>
 <context>
@@ -1595,7 +1524,7 @@ Are you sure?</source>
     </message>
     <message>
         <source>The language will be changed after restarting the wallet.</source>
-        <translation type="vanished">Язык будет изменен после перезапуска кошелька.</translation>
+        <translation>Язык будет изменен после перезапуска кошелька.</translation>
     </message>
     <message>
         <source>Language was changed</source>
@@ -1638,7 +1567,7 @@ Are you sure?</source>
         </translation>
     </message>
     <message>
-        <source>Karbo Wallet %1</source>
+        <source>DRGL Wallet %1</source>
         <translation>Карбованец в. %1</translation>
     </message>
     <message numerus="yes">
@@ -1662,7 +1591,7 @@ Are you sure?</source>
         <translation type="vanished">Сумма: %1, хеш: %2</translation>
     </message>
     <message>
-        <source>Karbo Wallet</source>
+        <source>DRGL Wallet</source>
         <translation type="vanished">Карбованец</translation>
     </message>
     <message>
@@ -1720,18 +1649,6 @@ Are you sure?</source>
     <message>
         <source>Wrong wallet file extension, wallet file should have &quot;.wallet&quot;, &quot;.keys&quot; or &quot;.trackingwallet&quot; extension.</source>
         <translation>Неверное расширение файла, файл кошелька должен иметь расширение &quot;.wallet&quot;, &quot;.keys&quot; или &quot;.trackingwallet&quot;.</translation>
-    </message>
-    <message>
-        <source>Current Language changed to %1</source>
-        <translation type="obsolete">Текущий язык изменен на %1</translation>
-    </message>
-    <message>
-        <source>Language changed to %1. The change will take effect after restarting the wallet.</source>
-        <translation>Язык изменен на %1. Изменение вступит в силу после перезапуска кошелька.</translation>
-    </message>
-    <message>
-        <source>Language changed to %1</source>
-        <translation>Язык изменен на %1</translation>
     </message>
 </context>
 <context>
@@ -1848,19 +1765,6 @@ Are you sure?</source>
     <message>
         <source>Available balance is insufficient to send this transaction. Have you excluded a fee?</source>
         <translation>Доступного баланса недостаточно для отправки этой транзакции. Вы не забыли отнять комиссию?</translation>
-    </message>
-</context>
-<context>
-    <name>WalletGui::SendGlassFrame</name>
-    <message>
-        <source>Synchronizing</source>
-        <translation>Идет синхронизация</translation>
-    </message>
-    <message>
-        <source>You will be able to send %1
-when the wallet is synchronized</source>
-        <translation>Вы сможете отправлять %1
-когда кошелек завершит синхронизацию</translation>
     </message>
 </context>
 <context>
@@ -2233,10 +2137,6 @@ when the wallet is synchronized</source>
     <message>
         <source>There must be an error in mnemonic seed. Make sure you entered it correctly.</source>
         <translation>В мнемонической фразе допущена ошибка. Убедитесь что вы ввели ее правильно.</translation>
-    </message>
-    <message>
-        <source>Sweeping unmixable dust</source>
-        <translation>Оптимизация несмешываемых выходов</translation>
     </message>
 </context>
 </TS>

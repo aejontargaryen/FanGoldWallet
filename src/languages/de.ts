@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE" sourcelanguage="en">
+<TS version="2.1" language="de_DE">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -55,8 +55,8 @@
         <translation>Gesamtsaldo</translation>
     </message>
     <message>
-        <source> krb</source>
-        <translation> krb</translation>
+        <source> DRGL</source>
+        <translation> DRGL</translation>
     </message>
     <message>
         <source>Frame</source>
@@ -167,10 +167,6 @@
         <source>Français</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Português</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ChangePasswordDialog</name>
@@ -224,7 +220,7 @@
     </message>
     <message>
         <source>Confirm sending %1 KRB</source>
-        <translation>Bestätige senden %1 KRB</translation>
+        <translation type="unfinished">Bestätige senden %1 KRB</translation>
     </message>
 </context>
 <context>
@@ -278,12 +274,12 @@
         <translation>Knoten hinzufügen</translation>
     </message>
     <message>
-        <source>Remove node</source>
-        <translation>Node entfernen</translation>
+        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 KRB.</source>
+        <translation>Wallet stellt eine Verbindung zum Remote-Knoten her, der im lokalen oder globalen Netzwerk ausgeführt wird. Bitte wählen Sie einen Knoten aus oder geben Sie die IP-Adresse oder den Domänennamen und den Port an. In diesem Modus sendet die Brieftasche 0,25% Gebühr von jeder Transaktion an den Knoten, aber nicht mehr als 10 KRB.</translation>
     </message>
     <message>
-        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 1 KRB.</source>
-        <translation>Wallet stellt eine Verbindung zum Remote-Knoten her, der im lokalen oder globalen Netzwerk ausgeführt wird. Bitte wählen Sie einen Knoten aus oder geben Sie die IP-Adresse oder den Domänennamen und den Port an. In diesem Modus sendet die Brieftasche 0,25% Gebühr von jeder Transaktion an den Knoten, aber nicht mehr als 1 KRB.</translation>
+        <source>Remove node</source>
+        <translation>Node entfernen</translation>
     </message>
 </context>
 <context>
@@ -303,11 +299,11 @@ Bitte warten...</translation>
     <name>ExportTrackingKeyDialog</name>
     <message>
         <source>Export tracking key</source>
-        <translation>Tracking Schlüssel exportieren</translation>
+        <translation>Tracking key exportieren</translation>
     </message>
     <message>
         <source>Tracking key allows to see all incoming transactions of this wallet. It does not allow to spend funds.</source>
-        <translation>Mit dem Tracking Schlüssel können Sie alle eingehenden Transaktionen dieser Brieftasche sehen. Es wird nicht erlaubt Beträge auszugeben.</translation>
+        <translation>Mit dem Tracking keyl können Sie alle eingehenden Transaktionen dieser Brieftasche sehen. Es wird nicht erlaubt Beträge auszugeben.</translation>
     </message>
     <message>
         <source>Save to file</source>
@@ -334,11 +330,11 @@ Bitte warten...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Pfad der Brieftasche:</translation>
+        <translation>Pfad der Brieftasche:</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -347,14 +343,6 @@ Bitte warten...</translation>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Wo neue Brieftasche Datei speichern:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Ordner auswählen</translation>
     </message>
 </context>
 <context>
@@ -365,7 +353,7 @@ Bitte warten...</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Key:</source>
@@ -373,7 +361,7 @@ Bitte warten...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Pfad der Brieftasche:</translation>
+        <translation>Pfad der Brieftasche:</translation>
     </message>
     <message>
         <source>Import a tracking key of a wallet to see all its incoming transactions. It doesn&apos;t allow spending funds.</source>
@@ -386,14 +374,6 @@ Bitte warten...</translation>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Wo neue Brieftasche Datei speichern:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Ordner auswählen</translation>
     </message>
 </context>
 <context>
@@ -559,7 +539,7 @@ Bitte warten...</translation>
     </message>
     <message>
         <source>Change language</source>
-        <translation type="vanished">Sprache ändern</translation>
+        <translation>Sprache ändern</translation>
     </message>
     <message>
         <source>Show private key</source>
@@ -632,14 +612,6 @@ Bitte warten...</translation>
     <message>
         <source>Start pool mining automatically</source>
         <translation>Pool mining automatisch starten</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Brieftasche</translation>
-    </message>
-    <message>
-        <source>Sweep unmixable</source>
-        <translation>Unmischbare Beträge zusammenführen</translation>
     </message>
 </context>
 <context>
@@ -821,25 +793,6 @@ Bitte warten...</translation>
     </message>
 </context>
 <context>
-    <name>NoWalletFrame</name>
-    <message>
-        <source>Frame</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Welcome to Karbo Wallet!</source>
-        <translation>Willkommen bei Karbo Brieftasche!</translation>
-    </message>
-    <message>
-        <source>Create wallet</source>
-        <translation>Brieftasche erstellen</translation>
-    </message>
-    <message>
-        <source>Open wallet</source>
-        <translation>Brieftasche öffnen</translation>
-    </message>
-</context>
-<context>
     <name>OpenUriDialog</name>
     <message>
         <source>Open payment request</source>
@@ -891,14 +844,6 @@ Bitte warten...</translation>
     <message>
         <source>Available balance:</source>
         <translation>Verfügbares Guthaben:</translation>
-    </message>
-    <message>
-        <source>Unmixable dust:</source>
-        <translation>Unmischbar:</translation>
-    </message>
-    <message>
-        <source>0.00</source>
-        <translation>0.00</translation>
     </message>
 </context>
 <context>
@@ -969,8 +914,8 @@ Bitte warten...</translation>
         <translation>Lade Blockchain...</translation>
     </message>
     <message>
-        <source>%1 wallet already running or cannot create lock file %2. Check your permissions.</source>
-        <translation>%1 Brieftasche läuft bereits oder kann die Sperrdatei %2 nicht erstellen. Überprüfen Sie Ihre Berechtigungen.</translation>
+        <source>%1 wallet already running</source>
+        <translation>%1 Brieftasche läuft bereits</translation>
     </message>
     <message>
         <source>New version available</source>
@@ -1054,11 +999,11 @@ Möchten Sie die Download Seite besuchen?</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Brieftaschen Pfad:</translation>
+        <translation>Brieftaschen Pfad:</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1067,14 +1012,6 @@ Möchten Sie die Download Seite besuchen?</translation>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Wo neue Brieftasche Datei speichern:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Ordner auswählen</translation>
     </message>
 </context>
 <context>
@@ -1137,7 +1074,7 @@ Möchten Sie die Download Seite besuchen?</translation>
     </message>
     <message>
         <source>Anonymity level:</source>
-        <translation>Anonymitätsebene:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1365,10 +1302,6 @@ Möchten Sie die Download Seite besuchen?</translation>
         <source>Contact with such label already exists.</source>
         <translation>Der Kontakt mit diesem Label existiert bereits.</translation>
     </message>
-    <message>
-        <source>&amp;Pay to</source>
-        <translation>&amp;Bezahlen Empfänger</translation>
-    </message>
 </context>
 <context>
     <name>WalletGui::AddressBookModel</name>
@@ -1489,11 +1422,11 @@ Externer Port für das P2P-Netzwerkprotokoll (wenn Portweiterleitung mit NAT ver
     <name>WalletGui::ExportTrackingKeyDialog</name>
     <message>
         <source>Save tracking key to...</source>
-        <translation>Tracking Schlüssel speichern unter...</translation>
+        <translation>Tracking Key speichern unter...</translation>
     </message>
     <message>
         <source>Tracking key (*.trackingkey)</source>
-        <translation>Tracking Schlüssel (*.trackingkey)</translation>
+        <translation>Tracking key (*.trackingkey)</translation>
     </message>
 </context>
 <context>
@@ -1515,11 +1448,7 @@ Externer Port für das P2P-Netzwerkprotokoll (wenn Portweiterleitung mit NAT ver
     </message>
     <message>
         <source>Tracking wallets (*.trackingwallet)</source>
-        <translation type="vanished">Tracking wallets (*.trackingwallet)</translation>
-    </message>
-    <message>
-        <source>Tracking wallets (*.wallet)</source>
-        <translation>Brieftaschen (*.wallet)</translation>
+        <translation>Tracking wallets (*.trackingwallet)</translation>
     </message>
 </context>
 <context>
@@ -1611,7 +1540,7 @@ Bist du sicher?</translation>
     </message>
     <message>
         <source>The language will be changed after restarting the wallet.</source>
-        <translation type="vanished">Die Sprache wird nach neustart des Wallets geändert.</translation>
+        <translation>Die Sprache wird nach neustart des Wallets geändert.</translation>
     </message>
     <message>
         <source>Language was changed</source>
@@ -1653,7 +1582,7 @@ Bist du sicher?</translation>
         </translation>
     </message>
     <message>
-        <source>Karbo Wallet %1</source>
+        <source>DRGL Wallet %1</source>
         <translation>Karbo Brieftasche %1</translation>
     </message>
     <message>
@@ -1669,8 +1598,8 @@ Bist du sicher?</translation>
         <translation type="vanished">Total Betrag: %1, hash: %2</translation>
     </message>
     <message>
-        <source>Karbo Wallet</source>
-        <translation type="vanished">Karbo Wallet</translation>
+        <source>DRGL Wallet</source>
+        <translation type="vanished">DRGL Wallet</translation>
     </message>
     <message>
         <source>New transaction received</source>
@@ -1727,18 +1656,6 @@ Bist du sicher?</translation>
     <message>
         <source>Wrong wallet file extension, wallet file should have &quot;.wallet&quot;, &quot;.keys&quot; or &quot;.trackingwallet&quot; extension.</source>
         <translation>Falsche Wallet-Dateierweiterung, Wallet-Datei sollte die Erweiterung &quot;.wallet&quot;, &quot;.keys&quot; oder &quot;.trackingwallet&quot; haben.</translation>
-    </message>
-    <message>
-        <source>Current Language changed to %1</source>
-        <translation type="obsolete">Aktuelle Sprache wurde in %1 geändert</translation>
-    </message>
-    <message>
-        <source>Language changed to %1. The change will take effect after restarting the wallet.</source>
-        <translation>Die Sprache wurde in %1 geändert. Die Änderung wird nach dem Neustart der Brieftasche wirksam.</translation>
-    </message>
-    <message>
-        <source>Language changed to %1</source>
-        <translation>Die Sprache wurde in %1 geändert</translation>
     </message>
 </context>
 <context>
@@ -1855,19 +1772,6 @@ Bist du sicher?</translation>
     <message>
         <source>Available balance is insufficient to send this transaction. Have you excluded a fee?</source>
         <translation>Der verfügbare Kontostand reicht nicht aus, um diese Transaktion zu senden. Haben Sie die Gebühr ausgeschlossen?</translation>
-    </message>
-</context>
-<context>
-    <name>WalletGui::SendGlassFrame</name>
-    <message>
-        <source>Synchronizing</source>
-        <translation>Synchronisieren</translation>
-    </message>
-    <message>
-        <source>You will be able to send %1
-when the wallet is synchronized</source>
-        <translation>Sie können  %1 senden
-wenn die Brieftasche die Synchronisation beendet</translation>
     </message>
 </context>
 <context>
@@ -2239,10 +2143,6 @@ Kann keinen neuen Schlüssel generieren</translation>
     <message>
         <source>There must be an error in mnemonic seed. Make sure you entered it correctly.</source>
         <translation>Es muss ein Fehler in der Mnemonic Seed geben. Vergewissern Sie sich, dass Sie es richtig eingegeben haben.</translation>
-    </message>
-    <message>
-        <source>Sweeping unmixable dust</source>
-        <translation>Unvermischbaren Staub ausstreichen</translation>
     </message>
 </context>
 </TS>

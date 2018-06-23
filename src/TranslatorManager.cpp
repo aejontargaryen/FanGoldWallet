@@ -1,66 +1,30 @@
 #include <QApplication>
-#include <QLocale>
-#include <QTranslator>
-#include "Settings.h"
+#include <QStringList>
 #include "TranslatorManager.h"
-
-using namespace WalletGui;
 
 TranslatorManager* TranslatorManager::m_Instance = 0;
 
 TranslatorManager::TranslatorManager()
 {
-    QString lang = Settings::instance().getLanguage();
-    if(lang.isEmpty()) {
-        lang = QLocale::system().name();
-        lang.truncate(lang.lastIndexOf('_'));
-    }
+    QString defaultLang = "uk_UA";
+    QStringList resources;
+    resources << "languages/uk" << "languages/ru" << "languages/pl";
 
-#if defined(_MSC_VER)
-  m_langPath = QApplication::applicationDirPath();
-  m_langPath.append("/languages");
-#elif defined(Q_OS_MAC)
-  m_langPath = QApplication::applicationDirPath();
-  m_langPath = m_langPath + "/../Resources/languages/";
-#else
-  m_langPath = "/opt/karbo/languages";
-#endif
+    QStringList languages;
+    languages << "uk_UA" << "ru_RU" << "pl_PL";
 
-    QDir dir(m_langPath);
-    QStringList resources = dir.entryList(QStringList("??.qm"));
     for (int j = 0; j < resources.size(); j++)
     {
-        QString locale = resources[j];
-        locale.truncate(locale.lastIndexOf('.'));
-        if (locale == lang)
+        QTranslator* pTranslator = new QTranslator;
+        if (pTranslator->load(resources[j], ":/"))
         {
-            QTranslator* pTranslator = new QTranslator;
-            if (pTranslator->load(resources[j], m_langPath))
+            if (languages[j] == defaultLang)
             {
                 qApp->installTranslator(pTranslator);
-                m_keyLang = locale;
-                m_translators.insert(locale, pTranslator);
-                break;
+                m_keyLang = languages[j];
             }
-        }
-    }
-    QStringList resourcesQt = dir.entryList(QStringList("qt_??.qm"));
-    for (int j = 0; j < resourcesQt.size(); j++)
-    {
-        QString locale = resourcesQt[j];
-        locale.truncate(locale.lastIndexOf('.'));
-        QString l = locale;
-        l.remove(0,3);
-        if (l == lang)
-        {
-            QTranslator* qTranslator = new QTranslator;
-            if (qTranslator->load(resourcesQt[j], m_langPath))
-            {
-                qApp->installTranslator(qTranslator);
-                m_keyLang = locale;
-                m_translators.insert(locale, qTranslator);
-                break;
-            }
+
+            m_translators.insert(languages[j], pTranslator);
         }
     }
 }
@@ -94,12 +58,18 @@ TranslatorManager* TranslatorManager::instance()
     return m_Instance;
 }
 
-void TranslatorManager::switchTranslator(QTranslator& translator, const QString& filename)
+bool TranslatorManager::setTranslator(QString& lang)
 {
-  // remove the old translator
-  qApp->removeTranslator(&translator);
+    bool rc = false;
+    if (lang != m_keyLang && m_translators.contains(lang))
+    {
+        QTranslator* pTranslator = m_translators[m_keyLang];
+        QCoreApplication::removeTranslator(pTranslator);
+        pTranslator = m_translators[lang];
+        QCoreApplication::installTranslator(pTranslator);
+        m_keyLang = lang;
+        rc = true;
+    }
 
-  // load the new translator
-  if(translator.load(filename))
-   qApp->installTranslator(&translator);
+    return rc;
 }

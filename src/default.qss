@@ -11,7 +11,7 @@ QTabBar {
 }
 
 QMainWindow {
-	background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0	rgb(255, 255, 255) stop: 1.0 rgb(156, 193, 239)) url(":/images/bg.png") no-repeat bottom left;
+	background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgba(255,255,255,1), stop:0.55 rgb(77, 152, 193), stop:65 rgb(19, 70, 107), stop:0.73 rgba(18, 59, 107,1),  stop:1 rgb(16,39,73)) url(":/images/bg.png") no-repeat bottom left;
 }
 
 QDialog {
@@ -47,12 +47,12 @@ QToolButton:focus {
 
 QPushButton:default,
 QToolButton:default {
-	background-color: #345476;
+	background-color:#345476;
 }
 
 QPushButton:hover,
 QToolButton:hover {
-	background-color: #628bb3;
+	background-color:#628bb3;
 }
 
 QPushButton:disabled,
@@ -206,6 +206,15 @@ QSlider::handle:horizontal {
 	outline: none;
 	image: url(:/images/handle.png);
 }
+
+QCheckBox:unchecked { color: red; }
+QCheckBox:checked { color: #1f578e; }
+
+
+QPushButton#m_sendButton:hover {
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.25 rgba(0, 115, 197, 255), stop:0.63 rgba(61, 169, 255, 255), stop:0.685 rgba(85, 182, 255, 255), stop:0.785 rgba(142, 208, 255, 255), stop:0.875 rgba(202, 233, 255, 255), stop:0.965 rgba(240, 249, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
 
 QSlider::handle:horizontal:hover {
 

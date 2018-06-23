@@ -12,7 +12,6 @@
 #include <QSplashScreen>
 #include <QStyleFactory>
 #include <QSettings>
-#include <QTextCodec>
 
 #include "CommandLineParser.h"
 #include "CurrencyAdapter.h"
@@ -23,8 +22,8 @@
 #include "WalletAdapter.h"
 #include "gui/MainWindow.h"
 #include "Update.h"
+#include <QTextCodec>
 #include "PaymentServer.h"
-#include "TranslatorManager.h"
 
 #define DEBUG 1
 
@@ -45,10 +44,45 @@ int main(int argc, char* argv[]) {
   Settings::instance().setCommandLineParser(&cmdLineParser);
   bool cmdLineParseResult = cmdLineParser.process(app.arguments());
   Settings::instance().load();
+  QTranslator translator;
+  QTranslator translatorQt;
 
-  //Translator must be created before the application's widgets.
-  TranslatorManager* tmanager = TranslatorManager::instance();
-  Q_UNUSED(tmanager)
+  QString lng = Settings::instance().getLanguage();
+
+  if(!lng.isEmpty()) {
+      translator.load(":/languages/" + lng + ".qm");
+      translatorQt.load(":/languages/qt_" + lng + ".qm");
+
+      if(lng == "uk") {
+            QLocale::setDefault(QLocale("uk_UA"));
+        } else if(lng == "ru") {
+            QLocale::setDefault(QLocale("ru_RU"));
+        } else if(lng == "pl") {
+            QLocale::setDefault(QLocale("pl_PL"));
+        } else if(lng == "be") {
+            QLocale::setDefault(QLocale("be_BY"));
+        } else if(lng == "de") {
+            QLocale::setDefault(QLocale("de_DE"));
+        } else if(lng == "es") {
+            QLocale::setDefault(QLocale("es_ES"));
+        } else if(lng == "fr") {
+            QLocale::setDefault(QLocale("fr_FR"));
+        } else {
+            QLocale::setDefault(QLocale::c());
+        }
+
+    } else {
+      translator.load(":/languages/" + QLocale::system().name());
+      translatorQt.load(":/languages/qt_" +  QLocale::system().name());
+      QLocale::setDefault(QLocale::system().name());
+  }
+  app.installTranslator(&translator);
+  app.installTranslator(&translatorQt);
+
+  //QLocale::setDefault(QLocale::c());
+
+  //QLocale locale = QLocale("uk_UA");
+  //QLocale::setDefault(locale);
 
   setlocale(LC_ALL, "");
 
@@ -72,10 +106,10 @@ int main(int argc, char* argv[]) {
   }
 
   //Create registry entries for URL execution
-  QSettings karbowanecKey("HKEY_CLASSES_ROOT\\karbowanec", QSettings::NativeFormat);
-  karbowanecKey.setValue(".", "Karbo Wallet");
+  QSettings karbowanecKey("HKEY_CLASSES_ROOT\\DRGL", QSettings::NativeFormat);
+  karbowanecKey.setValue(".", "DRGL Wallet");
   karbowanecKey.setValue("URL Protocol", "");
-  QSettings karbowanecOpenKey("HKEY_CLASSES_ROOT\\karbowanec\\shell\\open\\command", QSettings::NativeFormat);
+  QSettings karbowanecOpenKey("HKEY_CLASSES_ROOT\\DRGL\\shell\\open\\command", QSettings::NativeFormat);
   karbowanecOpenKey.setValue(".", "\"" + QCoreApplication::applicationFilePath().replace("/", "\\") + "\" \"%1\"");
 #endif
 
@@ -84,7 +118,7 @@ int main(int argc, char* argv[]) {
   QProcess exec;
 
   //as root
-  args << "-c" << "printf '[Desktop Entry]\\nName = Karbo URL Handler\\nGenericName = Karbo\\nComment = Handle URL Sheme karbowanec://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/karbowanec;\\nIcon = Karbo-Wallet' | tee /usr/share/applications/karbowanec-handler.desktop";
+  args << "-c" << "printf '[Desktop Entry]\\nName = DRGL URL Handler\\nGenericName = DRGL\\nComment = Handle URL Sheme dragonglass://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/dragonglass;\\nIcon = DRGL-Wallet' | tee /usr/share/applications/dragonglass-handler.desktop";
   exec.start("/bin/sh", args);
   exec.waitForFinished();
 
@@ -104,7 +138,7 @@ int main(int argc, char* argv[]) {
 
   QLockFile lockFile(Settings::instance().getDataDir().absoluteFilePath(QApplication::applicationName() + ".lock"));
   if (!lockFile.tryLock()) {
-    QMessageBox::warning(nullptr, QObject::tr("Fail"), QObject::tr("%1 wallet already running or cannot create lock file %2. Check your permissions.").arg(CurrencyAdapter::instance().getCurrencyDisplayName()).arg(Settings::instance().getDataDir().absoluteFilePath(QApplication::applicationName() + ".lock")));
+    QMessageBox::warning(nullptr, QObject::tr("Fail"), QObject::tr("%1 wallet already running").arg(CurrencyAdapter::instance().getCurrencyDisplayName()));
     return 0;
   }
 
@@ -125,8 +159,8 @@ int main(int argc, char* argv[]) {
     return 0;
   }
   splash->finish(&MainWindow::instance());
-  Updater *d = new Updater();
-  d->checkForUpdate();
+  Updater d;
+    d.checkForUpdate();
   MainWindow::instance().show();
   WalletAdapter::instance().open("");
 

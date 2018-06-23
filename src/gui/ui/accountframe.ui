@@ -285,14 +285,29 @@
            <height>20</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>FreeSerif</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+          </font>
+         </property>
          <property name="text">
-          <string> krb</string>
+          <string> DRGL</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
          </property>
          <property name="margin">
-          <number>0</number>
+          <number>-1</number>
+         </property>
+         <property name="indent">
+          <number>-1</number>
          </property>
         </widget>
        </item>

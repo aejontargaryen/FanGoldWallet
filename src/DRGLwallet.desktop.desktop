@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DRGL
+GenericName=DRGL wallet
+Comment=DRÆGONGLASS wallet
+Exec=dragonglass %U
+Terminal=false
+Type=Application
+Icon=dragonglass
+MimeType=x-scheme-handler/dragonglass;
+Categories=Office;Finance;
+Version=1.3.1
+Name[en_US]=DRGLwallet.desktop

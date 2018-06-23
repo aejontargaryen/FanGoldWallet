@@ -27,7 +27,6 @@ Q_DECL_CONSTEXPR char OPTION_RPCNODES[] = "remoteNodes";
 Q_DECL_CONSTEXPR char OPTION_DAEMON_PORT[] = "daemonPort";
 Q_DECL_CONSTEXPR char OPTION_REMOTE_NODE[] = "remoteNode";
 Q_DECL_CONSTEXPR char OPTION_CURRENT_POOL[] = "currentPool";
-const char OPTION_WALLET_THEME[] = "theme";
 
 Settings& Settings::instance() {
   static Settings inst;
@@ -89,22 +88,22 @@ void Settings::load() {
        m_settings.insert("tracking", false);
   }
 
-  QStringList defaultPoolList;
-  defaultPoolList << "pool.karbowanec.com:3333" << "pool2.democats.org:45570" << "krb.sberex.com:3333" << "mine.krb.mypool.online:32350";
-  if (!m_settings.contains(OPTION_MINING_POOLS)) {
-    setMiningPoolList(QStringList() << defaultPoolList);
-  } else {
-    QStringList poolList = getMiningPoolList();
-    Q_FOREACH (const QString& pool, defaultPoolList) {
-      if (!poolList.contains(pool)) {
-        poolList << pool;
-      }
-    }
-    setMiningPoolList(poolList);
-  }
+//  QStringList defaultPoolList;
+//  defaultPoolList << "" << "" << "" << "" << "";
+//  if (!m_settings.contains(OPTION_MINING_POOLS)) {
+//    setMiningPoolList(QStringList() << defaultPoolList);
+//  } else {
+//    QStringList poolList = getMiningPoolList();
+//    Q_FOREACH (const QString& pool, defaultPoolList) {
+//      if (!poolList.contains(pool)) {
+//        poolList << pool;
+//      }
+//    }
+//    setMiningPoolList(poolList);
+//  }
 
   QStringList defaultNodesList;
-  defaultNodesList << "node.karbowanec.com:32348" << "node.krb.mypool.online:32348"; // "pool2.democats.org:7671"
+  defaultNodesList << "ice.zirtysperzys.info:18180" << "fire.zirtysperzys.online:18180"; // "pool2.democats.org:7671"
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
@@ -218,10 +217,6 @@ QStringList Settings::getMiningPoolList() const {
     res << m_settings.value(OPTION_MINING_POOLS).toVariant().toStringList();
   }
   return res;
-}
-
-QString Settings::getCurrentTheme() const {
-  return m_settings.contains(OPTION_WALLET_THEME) ? m_settings.value(OPTION_WALLET_THEME).toString() : "light";
 }
 
 QString Settings::getLanguage() const {

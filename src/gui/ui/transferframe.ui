@@ -31,7 +31,7 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLineEdit" name="m_addressEdit">
-       <property name="clearButtonEnabled">
+       <property name="clearButtonEnabled" stdset="0">
         <bool>false</bool>
        </property>
       </widget>
@@ -107,10 +107,13 @@
       <string notr="true"/>
      </property>
      <property name="decimals">
-      <number>12</number>
+      <number>7</number>
      </property>
      <property name="maximum">
-      <double>9999999.999998999759555</double>
+      <double>8000008.799999999813735</double>
+     </property>
+     <property name="value">
+      <double>0.000000000000000</double>
      </property>
     </widget>
    </item>

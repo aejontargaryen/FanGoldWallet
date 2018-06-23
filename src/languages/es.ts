@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es_ES" sourcelanguage="en">
+<TS version="2.1" language="es_ES">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -55,8 +55,8 @@
         <translation>Saldo total</translation>
     </message>
     <message>
-        <source> krb</source>
-        <translation> krb</translation>
+        <source> DRGL</source>
+        <translation> DRGL</translation>
     </message>
     <message>
         <source>Frame</source>
@@ -167,10 +167,6 @@
         <source>Français</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Português</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ChangePasswordDialog</name>
@@ -279,12 +275,12 @@
         <translation>Añadir el nodo</translation>
     </message>
     <message>
-        <source>Remove node</source>
-        <translation>Eliminar nodo</translation>
+        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 KRB.</source>
+        <translation>El monedero se conectará al nodo remoto que se ejecuta en la red local o global. Por favor, seleccione nodo o especifique la dirección IP o el nombre de dominio y puerto. En este modo, el monedero envía una comisión del 0.25% de cada transacción al nodo, pero no más de 10 KRB.</translation>
     </message>
     <message>
-        <source>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 1 KRB.</source>
-        <translation>El monedero se conectará al nodo remoto que se ejecuta en la red local o global. Por favor, seleccione nodo o especifique la dirección IP o el nombre de dominio y puerto. En este modo, el monedero envía una comisión del 0.25% de cada transacción al nodo, pero no más de 1 KRB.</translation>
+        <source>Remove node</source>
+        <translation>Eliminar nodo</translation>
     </message>
 </context>
 <context>
@@ -335,11 +331,11 @@ Por favor, espera...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Camino de monedero:</translation>
+        <translation>Camino de monedero:</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -348,14 +344,6 @@ Por favor, espera...</translation>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Dónde guardar nuevo archivo de cartera:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Seleccionar carpeta</translation>
     </message>
 </context>
 <context>
@@ -366,7 +354,7 @@ Por favor, espera...</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Key:</source>
@@ -374,7 +362,7 @@ Por favor, espera...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Camino de monedero:</translation>
+        <translation>Camino de monedero:</translation>
     </message>
     <message>
         <source>Import a tracking key of a wallet to see all its incoming transactions. It doesn&apos;t allow spending funds.</source>
@@ -387,14 +375,6 @@ Por favor, espera...</translation>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Dónde guardar nuevo archivo de cartera:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Seleccionar carpeta</translation>
     </message>
 </context>
 <context>
@@ -560,7 +540,7 @@ Por favor, espera...</translation>
     </message>
     <message>
         <source>Change language</source>
-        <translation type="vanished">Cambiar el idioma</translation>
+        <translation>Cambiar el idioma</translation>
     </message>
     <message>
         <source>Show private key</source>
@@ -633,14 +613,6 @@ Por favor, espera...</translation>
     <message>
         <source>Start pool mining automatically</source>
         <translation>Comencar pool mining automáticamente</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Monedero</translation>
-    </message>
-    <message>
-        <source>Sweep unmixable</source>
-        <translation>Barrer no-mezclables</translation>
     </message>
 </context>
 <context>
@@ -824,25 +796,6 @@ Por favor, espera...</translation>
     </message>
 </context>
 <context>
-    <name>NoWalletFrame</name>
-    <message>
-        <source>Frame</source>
-        <translation type="unfinished">Marco</translation>
-    </message>
-    <message>
-        <source>Welcome to Karbo Wallet!</source>
-        <translation>Bienvenido a Karbo Monedero!</translation>
-    </message>
-    <message>
-        <source>Create wallet</source>
-        <translation>Crear el monedero</translation>
-    </message>
-    <message>
-        <source>Open wallet</source>
-        <translation>Abrir el monedero</translation>
-    </message>
-</context>
-<context>
     <name>OpenUriDialog</name>
     <message>
         <source>Open payment request</source>
@@ -894,14 +847,6 @@ Por favor, espera...</translation>
     <message>
         <source>Available balance:</source>
         <translation>Saldo disponible:</translation>
-    </message>
-    <message>
-        <source>Unmixable dust:</source>
-        <translation>Inmezclable:</translation>
-    </message>
-    <message>
-        <source>0.00</source>
-        <translation>0.00</translation>
     </message>
 </context>
 <context>
@@ -973,8 +918,8 @@ Por favor, espera...</translation>
         <translation>Cargando blockchain...</translation>
     </message>
     <message>
-        <source>%1 wallet already running or cannot create lock file %2. Check your permissions.</source>
-        <translation>El monederoya %1 está ejecutándose o no puede crear el archivo de bloqueo %2. Verifica tus permisos.</translation>
+        <source>%1 wallet already running</source>
+        <translation>%1 el monederoya está ejecutándose</translation>
     </message>
     <message>
         <source>New version available</source>
@@ -1058,11 +1003,11 @@ Do you want to go to download page?</source>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Wallet path:</source>
-        <translation type="vanished">Camino de monedero:</translation>
+        <translation>Camino de monedero:</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1071,14 +1016,6 @@ Do you want to go to download page?</source>
     <message>
         <source>OK</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>Where to save new wallet file:</source>
-        <translation>Dónde guardar nuevo archivo de cartera:</translation>
-    </message>
-    <message>
-        <source>Select folder</source>
-        <translation>Seleccionar carpeta</translation>
     </message>
 </context>
 <context>
@@ -1306,7 +1243,7 @@ Do you want to go to download page?</source>
     <name>WalletGui::AboutDialog</name>
     <message>
         <source>About %1 Wallet</source>
-        <translation>Sobre %1 Monedero</translation>
+        <translation>Sobre %1% Monedero</translation>
     </message>
 </context>
 <context>
@@ -1365,10 +1302,6 @@ Do you want to go to download page?</source>
     <message>
         <source>Contact with such label already exists.</source>
         <translation>El contacto con esa etiqueta ya existe.</translation>
-    </message>
-    <message>
-        <source>&amp;Pay to</source>
-        <translation>&amp;Pagar a este destinatario</translation>
     </message>
 </context>
 <context>
@@ -1514,11 +1447,7 @@ Do you want to go to download page?</source>
     </message>
     <message>
         <source>Tracking wallets (*.trackingwallet)</source>
-        <translation type="vanished">Seguimiento de monederos (*.trackingwallet)</translation>
-    </message>
-    <message>
-        <source>Tracking wallets (*.wallet)</source>
-        <translation>Seguimiento de monederos (*.wallet)</translation>
+        <translation>Seguimiento de monederos (*.trackingwallet)</translation>
     </message>
 </context>
 <context>
@@ -1611,7 +1540,7 @@ Are you sure?</source>
     </message>
     <message>
         <source>The language will be changed after restarting the wallet.</source>
-        <translation type="vanished">El idioma se cambiará después de reiniciar el monedero.</translation>
+        <translation>El idioma se cambiará después de reiniciar el monedero.</translation>
     </message>
     <message>
         <source>Language was changed</source>
@@ -1653,7 +1582,7 @@ Are you sure?</source>
         </translation>
     </message>
     <message>
-        <source>Karbo Wallet %1</source>
+        <source>DRGL Wallet %1</source>
         <translation>Karbo Monedero %1</translation>
     </message>
     <message>
@@ -1669,7 +1598,7 @@ Are you sure?</source>
         <translation type="vanished">Cantidad total: %1, hash: %2</translation>
     </message>
     <message>
-        <source>Karbo Wallet</source>
+        <source>DRGL Wallet</source>
         <translation type="vanished">Karbo Monedero</translation>
     </message>
     <message>
@@ -1727,14 +1656,6 @@ Are you sure?</source>
     <message>
         <source>Wrong wallet file extension, wallet file should have &quot;.wallet&quot;, &quot;.keys&quot; or &quot;.trackingwallet&quot; extension.</source>
         <translation>La extensión incorrecta del archivo del monedero, el archivo del monedero debe tener la extensión &quot;.wallet&quot;, &quot;.keys&quot; o &quot;.trackingwallet&quot;.</translation>
-    </message>
-    <message>
-        <source>Language changed to %1. The change will take effect after restarting the wallet.</source>
-        <translation>El idioma cambió a %1. El idioma se cambiará después de reiniciar el monedero.</translation>
-    </message>
-    <message>
-        <source>Language changed to %1</source>
-        <translation>El idioma cambió a %1</translation>
     </message>
 </context>
 <context>
@@ -1851,19 +1772,6 @@ Are you sure?</source>
     <message>
         <source>Available balance is insufficient to send this transaction. Have you excluded a fee?</source>
         <translation>El saldo disponible no es suficiente para enviar esta transacción. ¿Ha excluido una tasa?</translation>
-    </message>
-</context>
-<context>
-    <name>WalletGui::SendGlassFrame</name>
-    <message>
-        <source>Synchronizing</source>
-        <translation>Sincronizando</translation>
-    </message>
-    <message>
-        <source>You will be able to send %1
-when the wallet is synchronized</source>
-        <translation>Podrás enviar %1
-cuando la cartera termine de sincronizar</translation>
     </message>
 </context>
 <context>
@@ -2024,7 +1932,7 @@ cuando la cartera termine de sincronizar</translation>
     </message>
     <message>
         <source>Incoming transaction, unconfirmed</source>
-        <translation>Transacción entrante, sin confirmar</translation>
+        <translation>Transacción entrante, inconfirmado</translation>
     </message>
     <message>
         <source>Mined, confirmations</source>
@@ -2032,11 +1940,11 @@ cuando la cartera termine de sincronizar</translation>
     </message>
     <message>
         <source>Sent to yourself, unconfirmed</source>
-        <translation>Enviado a ti mismo, sin confirmar</translation>
+        <translation>Enviado a ti mismo, inconfirmado</translation>
     </message>
     <message>
         <source>Outgoing transaction, unconfirmed</source>
-        <translation>Transacción saliente, sin confirmar</translation>
+        <translation>Transacción saliente, inconfirmado</translation>
     </message>
     <message numerus="yes">
         <source>Incoming transaction, %n confirmation(s)</source>
@@ -2232,10 +2140,6 @@ cuando la cartera termine de sincronizar</translation>
     <message>
         <source>There must be an error in mnemonic seed. Make sure you entered it correctly.</source>
         <translation>Debe haber un error en la frase mnemónica. Asegúrate de haberlo ingresado correctamente.</translation>
-    </message>
-    <message>
-        <source>Sweeping unmixable dust</source>
-        <translation>Barrer inigualable</translation>
     </message>
 </context>
 </TS>
