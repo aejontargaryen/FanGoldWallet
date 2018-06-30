@@ -63,56 +63,6 @@
      <property name="topMargin">
       <number>5</number>
      </property>
-     <item row="5" column="1">
-      <widget class="QSlider" name="m_mixinSlider">
-       <property name="maximumSize">
-        <size>
-         <width>150</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="baseSize">
-        <size>
-         <width>200</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximum">
-        <number>10</number>
-       </property>
-       <property name="pageStep">
-        <number>1</number>
-       </property>
-       <property name="value">
-        <number>5</number>
-       </property>
-       <property name="sliderPosition">
-        <number>5</number>
-       </property>
-       <property name="tracking">
-        <bool>false</bool>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="tickPosition">
-        <enum>QSlider::TicksBothSides</enum>
-       </property>
-       <property name="tickInterval">
-        <number>1</number>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>Anonymity level:</string>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="3">
       <widget class="QCheckBox" name="donateCheckBox">
        <property name="palette">
@@ -547,25 +497,21 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label">
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
-       <property name="text">
-        <string>Fee:</string>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
        </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_6">
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>100</width>
+         <height>20</height>
+        </size>
        </property>
-       <property name="text">
-        <string>PaymentID:</string>
-       </property>
-      </widget>
+      </spacer>
      </item>
      <item row="5" column="2">
       <widget class="QLineEdit" name="m_mixinEdit">
@@ -593,6 +539,66 @@
        <property name="readOnly">
         <bool>true</bool>
        </property>
+       <property name="cursorMoveStyle">
+        <enum>Qt::LogicalMoveStyle</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>Fee:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>PaymentID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QDoubleSpinBox" name="m_donateSpin">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>IBeamCursor</cursorShape>
+       </property>
+       <property name="locale">
+        <locale language="English" country="UnitedStates"/>
+       </property>
+       <property name="decimals">
+        <number>7</number>
+       </property>
+       <property name="maximum">
+        <double>9999999.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
       </widget>
      </item>
      <item row="3" column="1" colspan="3">
@@ -602,6 +608,16 @@
        </property>
        <property name="placeholderText">
         <string>Payment identifier issued by payee (exchange, shop or other entity)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Anonymity level:</string>
        </property>
       </widget>
      </item>
@@ -664,58 +680,48 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
-      <widget class="QDoubleSpinBox" name="m_donateSpin">
-       <property name="minimumSize">
-        <size>
-         <width>150</width>
-         <height>0</height>
-        </size>
-       </property>
+     <item row="5" column="1">
+      <widget class="QSlider" name="m_mixinSlider">
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
+         <width>150</width>
          <height>16777215</height>
         </size>
        </property>
        <property name="baseSize">
         <size>
-         <width>150</width>
+         <width>200</width>
          <height>0</height>
         </size>
        </property>
        <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
-       <property name="locale">
-        <locale language="English" country="UnitedStates"/>
-       </property>
-       <property name="decimals">
-        <number>7</number>
+        <cursorShape>SizeHorCursor</cursorShape>
        </property>
        <property name="maximum">
-        <double>9999999.000000000000000</double>
+        <number>10</number>
        </property>
-       <property name="singleStep">
-        <double>0.100000000000000</double>
+       <property name="pageStep">
+        <number>1</number>
        </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <spacer name="horizontalSpacer">
+       <property name="value">
+        <number>5</number>
+       </property>
+       <property name="sliderPosition">
+        <number>5</number>
+       </property>
+       <property name="tracking">
+        <bool>false</bool>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Expanding</enum>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>100</width>
-         <height>20</height>
-        </size>
+       <property name="tickInterval">
+        <number>1</number>
        </property>
-      </spacer>
+      </widget>
      </item>
     </layout>
    </item>
@@ -806,6 +812,11 @@
      </item>
      <item>
       <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">color:rgb(255, 255, 255)</string>
        </property>
@@ -817,7 +828,8 @@
      <item>
       <widget class="QLabel" name="m_balanceLabel">
        <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+        <string notr="true">color: rgb(255, 255, 255);
+</string>
        </property>
        <property name="text">
         <string notr="true">0.00 </string>
@@ -826,8 +838,62 @@
      </item>
      <item>
       <widget class="QLabel" name="m_tickerLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>FreeSerif</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(227, 243, 248);</string>
+       </property>
        <property name="text">
-        <string notr="true"/>
+        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#deeff3;&quot;&gt;DRGL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+       <property name="indent">
+        <number>0</number>
        </property>
       </widget>
      </item>

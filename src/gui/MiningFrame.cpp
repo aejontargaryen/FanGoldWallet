@@ -22,7 +22,7 @@
 
 namespace WalletGui {
 
-const quint32 HASHRATE_TIMER_INTERVAL = 1000;
+const quint32 HASHRATE_TIMER_INTERVAL = 800;
 
 MiningFrame::MiningFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::MiningFrame), m_miner(nullptr),
   m_poolModel(new PoolModel(this)), m_hashRateTimerId(-1), m_soloHashRateTimerId(-1) {
@@ -66,7 +66,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (hashRate == 0) {
       return;
     }
-    m_ui->m_poolLabel->setText(tr("Mining in pool. Hashrate: %1 H/s").arg(hashRate));
+    m_ui->m_poolLabel->setText(tr("Mining {DRGL} alongside your Bannermen - Your Hashrate sent to pool is %1 H/s").arg(hashRate));
     return;
   }
 
@@ -75,7 +75,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (soloHashRate == 0) {
       return;
     }
-    m_ui->m_soloLabel->setText(tr("Mining solo. Hashrate: %1 H/s").arg(soloHashRate));
+    m_ui->m_soloLabel->setText(tr("Solo mining {Dragonglass} - Your Hashrate is %1 H/s").arg(soloHashRate));
     return;
   }
 
@@ -175,7 +175,7 @@ void MiningFrame::stopMining() {
 
 void MiningFrame::startSolo() {
   NodeAdapter::instance().startSoloMining(m_walletAddress, m_ui->m_cpuCombo->currentData().toUInt());
-  m_ui->m_soloLabel->setText(tr("Starting solo minining..."));
+  m_ui->m_soloLabel->setText(tr("Preparing your solo miner..."));
   m_soloHashRateTimerId = startTimer(HASHRATE_TIMER_INTERVAL);
 
   m_ui->m_startSolo->setEnabled(false);

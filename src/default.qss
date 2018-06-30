@@ -1,5 +1,5 @@
 * {
-	color: #15315E;
+	color: #000000;
 }
 
 *:disabled {
@@ -11,7 +11,7 @@ QTabBar {
 }
 
 QMainWindow {
-	background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgba(255,255,255,1), stop:0.55 rgb(77, 152, 193), stop:65 rgb(19, 70, 107), stop:0.73 rgba(18, 59, 107,1),  stop:1 rgb(16,39,73)) url(":/images/bg.png") no-repeat bottom left;
+	background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(184, 230, 255), stop:0.55 rgb(77, 152, 193), stop:65 rgb(19, 70, 107), stop:0.73 rgba(18, 59, 107,1),  stop:1 rgb(16,39,73)) url(":/images/bg.png") no-repeat bottom left;
 }
 
 QDialog {
@@ -303,10 +303,12 @@ QStatusBar#statusBar {
 
 #m_accountFrame #totalBalance {
 	color: #15315e;
+	background: transparent;
 }
 
 #m_accountFrame #addressStatusLabel {
 	color: #41548D;
+	background: transparent;
 }
 
 QToolTip{

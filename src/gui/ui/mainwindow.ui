@@ -48,16 +48,7 @@
     </sizepolicy>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
+    <property name="margin">
      <number>0</number>
     </property>
     <property name="spacing">
@@ -84,13 +75,16 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.505, y2:0, stop:0 rgba(184, 230, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
       </property>
       <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
+       <enum>QFrame::Panel</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>-1</number>
       </property>
      </widget>
     </item>
@@ -198,7 +192,7 @@
      <x>0</x>
      <y>0</y>
      <width>980</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -232,20 +226,6 @@
     <addaction name="separator"/>
     <addaction name="m_exitAction"/>
    </widget>
-   <widget class="QMenu" name="menuSettings">
-    <property name="title">
-     <string>Settings</string>
-    </property>
-    <addaction name="m_encryptWalletAction"/>
-    <addaction name="m_changePasswordAction"/>
-    <addaction name="m_changeLanguageAction"/>
-    <addaction name="m_connectionSettingsAction"/>
-    <addaction name="separator"/>
-    <addaction name="m_startOnLoginAction"/>
-    <addaction name="m_minimizeToTrayAction"/>
-    <addaction name="m_closeToTrayAction"/>
-    <addaction name="m_miningOnLaunchAction"/>
-   </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
@@ -255,7 +235,6 @@
     <addaction name="actionHelp"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuSettings"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="toolBar">
