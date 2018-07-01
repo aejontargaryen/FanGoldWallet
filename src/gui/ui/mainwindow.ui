@@ -226,7 +226,21 @@
     <addaction name="separator"/>
     <addaction name="m_exitAction"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+	<widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="m_encryptWalletAction"/>
+    <addaction name="m_changePasswordAction"/>
+    <addaction name="m_changeLanguageAction"/>
+    <addaction name="m_connectionSettingsAction"/>
+    <addaction name="separator"/>
+    <addaction name="m_startOnLoginAction"/>
+    <addaction name="m_minimizeToTrayAction"/>
+    <addaction name="m_closeToTrayAction"/>
+    <addaction name="m_miningOnLaunchAction"/>
+   </widget>
+	<widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
@@ -235,6 +249,7 @@
     <addaction name="actionHelp"/>
    </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="toolBar">
