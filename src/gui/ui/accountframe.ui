@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>984</width>
+    <width>1151</width>
     <height>71</height>
    </rect>
   </property>
@@ -26,9 +26,7 @@
    <string>Frame</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.515, y1:1, x2:0.53, y2:0, stop:0 rgba(184, 230, 255, 255), stop:0.615 rgba(221, 243, 255, 255), stop:1 rgba(255, 255, 255, 255));
-
-</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.495, y1:0, x2:0.5, y2:1, stop:0.435 rgba(47, 47, 47, 255), stop:1 rgba(0, 0, 0, 255));</string>
   </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
@@ -83,9 +81,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>121</red>
-             <green>121</green>
-             <blue>121</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -101,18 +99,18 @@
           <colorrole role="Text">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>255</red>
-             <green>255</green>
-             <blue>255</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>255</red>
-             <green>255</green>
-             <blue>255</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -139,9 +137,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>121</red>
-             <green>121</green>
-             <blue>121</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -157,18 +155,18 @@
           <colorrole role="Text">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>255</red>
-             <green>255</green>
-             <blue>255</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>255</red>
-             <green>255</green>
-             <blue>255</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -195,9 +193,9 @@
           <colorrole role="WindowText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>159</red>
-             <green>158</green>
-             <blue>158</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -213,18 +211,18 @@
           <colorrole role="Text">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>159</red>
-             <green>158</green>
-             <blue>158</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
           <colorrole role="ButtonText">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>159</red>
-             <green>158</green>
-             <blue>158</blue>
+             <red>203</red>
+             <green>203</green>
+             <blue>203</blue>
             </color>
            </brush>
           </colorrole>
@@ -251,8 +249,8 @@
        </property>
        <property name="font">
         <font>
-         <family>Goudy Thirty</family>
-         <pointsize>18</pointsize>
+         <family>Game of Thrones</family>
+         <pointsize>13</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -261,8 +259,13 @@
          <kerning>true</kerning>
         </font>
        </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
        <property name="styleSheet">
-        <string notr="true">background-color: transparent;</string>
+        <string notr="true">color:rgb(203, 203, 203);
+background-color: transparent;
+</string>
        </property>
        <property name="frameShape">
         <enum>QFrame::NoFrame</enum>
@@ -277,25 +280,25 @@
         <number>0</number>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#666666;&quot;&gt;Your account&lt;/span&gt;&lt;span style=&quot; color:#464646;&quot;&gt; ||&lt;/span&gt;&lt;span style=&quot; color:#e7f7ff;&quot;&gt;_______________________________The Long Night Is Coming........and The Dead Come With It_____________________&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;Your account __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
        </property>
        <property name="scaledContents">
-        <bool>false</bool>
+        <bool>true</bool>
        </property>
        <property name="alignment">
         <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
        </property>
        <property name="margin">
-        <number>-1</number>
+        <number>3</number>
        </property>
        <property name="indent">
         <number>0</number>
        </property>
        <property name="textInteractionFlags">
-        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+        <set>Qt::TextEditorInteraction</set>
        </property>
       </widget>
      </item>
@@ -339,9 +342,9 @@
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>108</red>
-               <green>108</green>
-               <blue>108</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -393,9 +396,9 @@
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -411,9 +414,9 @@
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -476,9 +479,9 @@
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>108</red>
-               <green>108</green>
-               <blue>108</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -530,9 +533,9 @@
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -548,9 +551,9 @@
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -613,9 +616,9 @@
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -667,9 +670,9 @@
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -685,9 +688,9 @@
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>48</red>
-               <green>48</green>
-               <blue>48</blue>
+               <red>216</red>
+               <green>212</green>
+               <blue>210</blue>
               </color>
              </brush>
             </colorrole>
@@ -764,7 +767,7 @@
           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#f7f7f7;&quot;&gt;This is your account address&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(48, 48, 48);
+          <string notr="true">color: rgb(216, 212, 210);
 background-color: transparent;
 </string>
          </property>
@@ -1301,7 +1304,7 @@ background-color: transparent;
          <property name="font">
           <font>
            <family>URW Gothic L</family>
-           <pointsize>18</pointsize>
+           <pointsize>19</pointsize>
            <weight>50</weight>
            <italic>false</italic>
            <bold>false</bold>

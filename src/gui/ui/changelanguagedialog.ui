@@ -18,6 +18,16 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Theuerdank Fraktur</family>
+         <pointsize>17</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <kerning>false</kerning>
+        </font>
+       </property>
        <property name="text">
         <string>Select language:</string>
        </property>

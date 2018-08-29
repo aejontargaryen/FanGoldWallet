@@ -47,6 +47,9 @@
           <height>0</height>
          </size>
         </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="editable">
          <bool>false</bool>
         </property>
@@ -67,6 +70,9 @@
       </item>
       <item row="0" column="2">
        <widget class="QPushButton" name="m_addPoolButton">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Add pool</string>
         </property>
@@ -106,6 +112,9 @@
         </item>
         <item row="0" column="0">
          <widget class="QPushButton" name="m_startButton">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
           <property name="text">
            <string>Start mining</string>
           </property>
@@ -121,6 +130,9 @@
          <widget class="QPushButton" name="m_stopButton">
           <property name="enabled">
            <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>Stop mining</string>
@@ -154,6 +166,9 @@
       </item>
       <item row="0" column="3">
        <widget class="QPushButton" name="m_delPoolButton">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Remove pool</string>
         </property>
@@ -190,7 +205,11 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="m_cpuCombo"/>
+       <widget class="QComboBox" name="m_cpuCombo">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
       </item>
       <item row="0" column="2">
        <spacer name="horizontalSpacer_3">
@@ -238,6 +257,9 @@
         <property name="enabled">
          <bool>false</bool>
         </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Stop mining</string>
         </property>
@@ -256,6 +278,9 @@
        <widget class="QPushButton" name="m_startSolo">
         <property name="enabled">
          <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>Start mining</string>

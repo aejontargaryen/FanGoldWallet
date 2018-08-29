@@ -75,7 +75,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.505, y2:0, stop:0 rgba(184, 230, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::Panel</enum>
@@ -96,6 +96,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
@@ -111,6 +114,9 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -226,7 +232,7 @@
     <addaction name="separator"/>
     <addaction name="m_exitAction"/>
    </widget>
-	<widget class="QMenu" name="menuSettings">
+   <widget class="QMenu" name="menuSettings">
     <property name="title">
      <string>Settings</string>
     </property>
@@ -240,7 +246,7 @@
     <addaction name="m_closeToTrayAction"/>
     <addaction name="m_miningOnLaunchAction"/>
    </widget>
-	<widget class="QMenu" name="menuHelp">
+   <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
@@ -279,11 +285,19 @@
    </property>
    <property name="font">
     <font>
+     <family>Game of Thrones</family>
      <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <kerning>true</kerning>
     </font>
    </property>
    <property name="windowTitle">
     <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="movable">
     <bool>false</bool>
@@ -332,15 +346,26 @@
    <property name="checkable">
     <bool>true</bool>
    </property>
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
    <property name="icon">
     <iconset resource="../../resources.qrc">
      <normaloff>:/icons/overview</normaloff>:/icons/overview</iconset>
    </property>
    <property name="text">
     <string>Overview</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="size" stdset="0">
+    <size>
+     <width>25</width>
+     <height>20</height>
+    </size>
    </property>
   </action>
   <action name="m_sendAction">
@@ -357,6 +382,12 @@
    <property name="text">
     <string>Send</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </action>
   <action name="m_receiveAction">
    <property name="checkable">
@@ -372,6 +403,12 @@
    <property name="text">
     <string>Receive</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
   </action>
   <action name="m_transactionsAction">
    <property name="checkable">
@@ -386,6 +423,12 @@
    </property>
    <property name="text">
     <string>Transactions</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </action>
   <action name="m_exitAction">
@@ -412,6 +455,12 @@
    </property>
    <property name="text">
     <string>Contacts</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </action>
   <action name="m_createWalletAction">
@@ -512,6 +561,12 @@
    </property>
    <property name="text">
     <string>Mining</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cinzel</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </action>
   <action name="m_resetAction">
@@ -614,7 +669,7 @@
   <customwidget>
    <class>WalletGui::OverviewFrame</class>
    <extends>QFrame</extends>
-   <header>gui/OverviewFrame.h</header>
+   <header location="global">gui/OverviewFrame.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

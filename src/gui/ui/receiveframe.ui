@@ -108,6 +108,9 @@
          </item>
          <item row="1" column="1" colspan="2">
           <widget class="QLineEdit" name="m_payerLabel">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="maxLength">
             <number>64</number>
            </property>
@@ -156,6 +159,9 @@
              <height>0</height>
             </size>
            </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="locale">
             <locale language="English" country="UnitedStates"/>
            </property>
@@ -201,6 +207,9 @@
          </item>
          <item row="3" column="1" colspan="5">
           <widget class="QLineEdit" name="m_requestPaymentIdEdit">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="maxLength">
             <number>64</number>
            </property>
@@ -223,6 +232,9 @@
              <height>24</height>
             </size>
            </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="text">
             <string>Generate Payment ID</string>
            </property>
@@ -241,6 +253,9 @@
              <width>0</width>
              <height>24</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
            <property name="text">
             <string>Create payment request</string>
@@ -264,6 +279,9 @@
              <width>0</width>
              <height>24</height>
             </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
            </property>
            <property name="text">
             <string>Close</string>
@@ -328,6 +346,9 @@
       </property>
       <item>
        <widget class="QPushButton" name="m_copyAddress">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Copy address</string>
         </property>
@@ -342,6 +363,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="m_saveQR">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="text">
          <string>Save QR to file</string>
         </property>
@@ -355,6 +379,9 @@
        <widget class="QPushButton" name="m_requestPaymentButton">
         <property name="enabled">
          <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
         </property>
         <property name="text">
          <string>Request payment</string>

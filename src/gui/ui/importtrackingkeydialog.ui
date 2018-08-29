@@ -88,6 +88,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_cancelButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string>Cancel</string>
        </property>
@@ -98,6 +101,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_okButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string>OK</string>
        </property>

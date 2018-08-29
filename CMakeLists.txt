@@ -206,7 +206,7 @@ elseif (UNIX)
     file(GLOB_RECURSE OBJC_SOURCES src/*.mm)
     set(SOURCES ${SOURCES} ${OBJC_SOURCES})
     set(PLATFORM_DIR OSX)
-    set(MACOSX_BUNDLE_INFO_STRING "Dragonglass GUI wallet")
+    set(MACOSX_BUNDLE_INFO_STRING "DRGL wallet")
     set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
     set(MACOSX_BUNDLE_BUNDLE_NAME "Dragonglass")
     set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
@@ -220,8 +220,8 @@ elseif (UNIX)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -maes -D_DARWIN_C_SOURCE")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework Cocoa -framework OpenGL -framework CoreFoundation -framework Carbon -framework IOKit -L/usr/lib")
 
-    set(MACOSX_BUNDLE_ICON_FILE karbowanec.icns)
-    set(APPLICATION_ICON src/images/karbowanec.icns)
+    set(MACOSX_BUNDLE_ICON_FILE DRGL.icns)
+    set(APPLICATION_ICON src/images/DRGL.icns)
     set_source_files_properties(${APPLICATION_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
     set(BUILD_PLATFORM MACOSX_BUNDLE)
@@ -303,7 +303,7 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "MIT")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "Dragonglass DRGL wallet")
+        set(CPACK_RPM_PACKAGE_SUMMARY "DRGL wallet")
         set(CPACK_RPM_PACKAGE_DESCRIPTION "DRGL wallet
  Dragonglass is decentrilized, privacy oriented peer-to-peer
  cryptocurrency. It is open-source, nobody owns or controls Dragonglass

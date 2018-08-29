@@ -161,7 +161,7 @@ void MainWindow::initUi() {
   m_trackingModeIconLabel->setPixmap(QPixmap(":icons/tracking").scaledToHeight(16, Qt::SmoothTransformation));
   m_remoteModeIconLabel->hide();
   m_trackingModeIconLabel->hide();
-  m_trackingModeIconLabel->setToolTip(tr("Tracking wallet. Spending unawailable"));
+  m_trackingModeIconLabel->setToolTip(tr("Tracking wallet. Spending unavailable"));
   m_remoteModeIconLabel->setToolTip(tr("Connected through remote node"));
 
   QString connection = Settings::instance().getConnection();
@@ -294,7 +294,7 @@ bool MainWindow::event(QEvent* _event) {
 }
 
 void MainWindow::createWallet() {
-  QString filePath = QFileDialog::getSaveFileName(this, tr("New wallet file"),
+	QString filePath = QFileDialog::getSaveFileName(this, tr("New wallet file"),
   #ifdef Q_OS_WIN
       //QApplication::applicationDirPath(),
         QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),

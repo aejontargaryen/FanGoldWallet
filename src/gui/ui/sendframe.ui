@@ -527,6 +527,9 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string notr="true"/>
        </property>
@@ -587,6 +590,9 @@
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="locale">
         <locale language="English" country="UnitedStates"/>
        </property>
@@ -603,6 +609,9 @@
      </item>
      <item row="3" column="1" colspan="3">
       <widget class="QLineEdit" name="m_paymentIdEdit">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="maxLength">
         <number>64</number>
        </property>
@@ -637,6 +646,9 @@
        </property>
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="locale">
         <locale language="English" country="UnitedStates"/>
@@ -674,6 +686,9 @@
          <width>200</width>
          <height>16777215</height>
         </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Generate Payment ID</string>
@@ -758,6 +773,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_clearAllButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string>Clear All</string>
        </property>
@@ -769,6 +787,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="m_addRecipientButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string>Add Recipient</string>
        </property>
