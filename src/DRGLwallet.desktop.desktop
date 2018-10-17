@@ -9,5 +9,5 @@ Type=Application
 Icon=dragonglass
 MimeType=x-scheme-handler/dragonglass;
 Categories=Office;Finance;
-Version=1.3.1
-Name[en_US]=DRGLwallet.desktop
+Version=2.1.0
+Name[en_US]=DRGLwallet
