@@ -1,0 +1,25 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DRGL
+GenericName=DRGL wallet
+Name[uk]=Dragonglass
+Name[ru]=Dragonglass
+Name[pl]=Dragonglass
+Name[be]=Dragonglass
+Name[de]=DRGL
+Name[es]=DRGL
+Comment=DRÆGONGLASS wallet
+Comment[uk]=Гаманець DRÆGONGLASS
+Comment[ru]=Кошелек DRÆGONGLASS
+Comment[pl]=Portfel DRÆGONGLASS
+Comment[be]=Кашалёк DRÆGONGLASS
+Comment[de]=DRGL Brieftasche
+Comment[es]=DRGL Monedero
+Exec=dragonglass %U
+Terminal=false
+Type=Application
+Icon=DRGL
+MimeType=x-scheme-handler/dragonglass;
+Categories=Office;Finance;
+Version=2.0.3
+
