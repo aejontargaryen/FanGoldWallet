@@ -293,8 +293,26 @@
      <kerning>true</kerning>
     </font>
    </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
    <property name="windowTitle">
-    <string>toolBar</string>
+    <string notr="true">toolBar</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
    </property>
    <property name="styleSheet">
     <string notr="true"/>
@@ -352,6 +370,9 @@
    </property>
    <property name="text">
     <string>Overview</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="font">
     <font>
@@ -548,7 +569,7 @@
   </action>
   <action name="m_importKeyAction">
    <property name="text">
-    <string>Import private key</string>
+    <string>Import wallet w/private key</string>
    </property>
   </action>
   <action name="m_miningAction">
