@@ -66,13 +66,13 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>22</height>
+         <height>24</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>21</height>
+         <height>24</height>
         </size>
        </property>
        <property name="palette">
@@ -262,6 +262,9 @@
        <property name="layoutDirection">
         <enum>Qt::LeftToRight</enum>
        </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="styleSheet">
         <string notr="true">color:rgb(203, 203, 203);
 background-color: transparent;
@@ -274,7 +277,7 @@ background-color: transparent;
         <enum>QFrame::Raised</enum>
        </property>
        <property name="lineWidth">
-        <number>-1</number>
+        <number>0</number>
        </property>
        <property name="midLineWidth">
         <number>0</number>

@@ -11,7 +11,11 @@ QTabBar {
 }
 
 QMainWindow {
-	background-color: qlineargradient(spread:reflect, x1:0.495, y1:1, x2:0.52, y2:0, stop:0 rgba(38, 38, 38, 255), stop:0.49 rgba(0, 0, 0, 252), stop:0.984293 rgba(0, 0, 0, 255));
+	background: qlineargradient(spread:reflect, x1:0.495, y1:1, x2:0.52, y2:0, stop:0 rgba(38, 38, 38, 255), stop:0.18 rgba(0, 0, 0, 252), stop:0.484293 rgba(0, 0, 0, 255)) ;
+}
+
+#m_sendFrame, #m_addressBookFrame, #m_miningFrame {
+		background: qlineargradient(spread:reflect, x1:0.495, y1:1, x2:0.52, y2:0, stop:0 rgba(38, 38, 38, 255), stop:0.18 rgba(0, 0, 0, 252), stop:0.484293 rgba(0, 0, 0, 255)) url(":/images/background.png") no-repeat center;
 }
 
 QDialog {
@@ -344,7 +348,7 @@ QStatusBar#statusBar {
 	background: transparent;
 }
 
-QFileDialog#filepath {
+QDialog#filepath {
 	background-color: #212121;
 }
 
