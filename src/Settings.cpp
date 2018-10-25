@@ -88,22 +88,22 @@ void Settings::load() {
        m_settings.insert("tracking", false);
   }
 
-//  QStringList defaultPoolList;
-//  defaultPoolList << "" << "" << "" << "" << "";
-//  if (!m_settings.contains(OPTION_MINING_POOLS)) {
-//    setMiningPoolList(QStringList() << defaultPoolList);
-//  } else {
-//    QStringList poolList = getMiningPoolList();
-//    Q_FOREACH (const QString& pool, defaultPoolList) {
-//      if (!poolList.contains(pool)) {
-//        poolList << pool;
-//      }
-//    }
-//    setMiningPoolList(poolList);
-//  }
+  QStringList defaultPoolList;
+  defaultPoolList << "crypto9coin.cf:18184" << "DRGL.online:8880" << "DRGL.cool-pool.net:4440";
+  if (!m_settings.contains(OPTION_MINING_POOLS)) {
+    setMiningPoolList(QStringList() << defaultPoolList);
+  } else {
+    QStringList poolList = getMiningPoolList();
+    Q_FOREACH (const QString& pool, defaultPoolList) {
+      if (!poolList.contains(pool)) {
+        poolList << pool;
+      }
+    }
+    setMiningPoolList(poolList);
+  }
 
   QStringList defaultNodesList;
-  defaultNodesList << "ice.zirtysperzys.info:18180" << "fire.zirtysperzys.online:18180"; // "pool2.democats.org:7671"
+  defaultNodesList << "ice.zirtysperzys.info:18180" << "fire.zirtysperzys.online:18180" << "mine.drgl.online:18181"; 
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
