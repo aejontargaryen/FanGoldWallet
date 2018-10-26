@@ -14,7 +14,7 @@ QMainWindow {
 	background: qlineargradient(spread:reflect, x1:0.495, y1:1, x2:0.52, y2:0, stop:0 rgba(38, 38, 38, 255), stop:0.18 rgba(0, 0, 0, 252), stop:0.484293 rgba(0, 0, 0, 255)) ;
 }
 
-#m_sendFrame, #m_addressBookFrame, #m_miningFrame {
+#m_addressBookFrame {
 		background: qlineargradient(spread:reflect, x1:0.495, y1:1, x2:0.52, y2:0, stop:0 rgba(38, 38, 38, 255), stop:0.18 rgba(0, 0, 0, 252), stop:0.484293 rgba(0, 0, 0, 255)) url(":/images/background.png") no-repeat center;
 }
 
@@ -297,7 +297,7 @@ QToolBar#toolBar QToolButton:pressed {
 
 QToolBar#toolBar QToolButton:checked {
 	background-color: #353535;
-	border: 4px ridge #15315e;
+	border: 3px ridge #000cc1;
 	border-radius: 30px;
 }
 
@@ -346,10 +346,6 @@ QStatusBar#statusBar {
 #m_accountFrame #addressStatusLabel {
 	color: #edeeef;
 	background: transparent;
-}
-
-QDialog#filepath {
-	background-color: #212121;
 }
 
 QToolTip{
