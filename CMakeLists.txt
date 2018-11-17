@@ -269,7 +269,7 @@ qt5_use_modules(${PROJECT_NAME} Widgets Gui Network)
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
 set(CPACK_PACKAGE_VENDOR "Dragonglass-project")
-set(CPACK_PACKAGE_CONTACT "http://zirtysperzys.org")
+set(CPACK_PACKAGE_CONTACT "https://zirtysperzys.org")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -281,7 +281,7 @@ elseif (UNIX)
     install(PROGRAMS build/${PROJECT_NAME} DESTINATION bin
     PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
     install(FILES src/DRGLwallet.desktop DESTINATION share/applications)
-    install(FILES src/images/karbowanez.png DESTINATION share/pixmaps RENAME dragonglass.png)
+    install(FILES src/images/dragonglass.png DESTINATION share/pixmaps)
     install(FILES copyright DESTINATION share/doc/DRGLwallet)
 
     if (NOT RPMBUILD)
@@ -292,8 +292,8 @@ elseif (UNIX)
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
         set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Dragonglass wallet
- Dragonglass is decentralized, privacy oriented peer-to-peer
- cryptocurrency. It is open-source, nobody owns or controls Dragonglass
+ Dragonglass is a decentralized peer-to-peer anonymous
+ cryptocurrency. It is open source, nobody owns or controls Dragonglass
  and everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}${CPACK_SYSTEM_NAME}")
     else()
@@ -305,7 +305,7 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
         set(CPACK_RPM_PACKAGE_SUMMARY "DRGL wallet")
         set(CPACK_RPM_PACKAGE_DESCRIPTION "DRGL wallet
- Dragonglass is decentrilized, privacy oriented peer-to-peer
+ Dragonglass is a decentralized peer-to-peer anonymous
  cryptocurrency. It is open-source, nobody owns or controls Dragonglass
  and everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}${CPACK_SYSTEM_NAME}")

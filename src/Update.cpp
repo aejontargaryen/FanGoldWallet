@@ -66,7 +66,7 @@ void Updater::checkForUpdate()
     {
         connect(manager, SIGNAL(finished(QNetworkReply*)),
                 this, SLOT(replyFinished(QNetworkReply*)));
-        manager->get(QNetworkRequest(QUrl(KRBCOIN_UPDATE_URL)));
+        manager->get(QNetworkRequest(QUrl(DRGLCOIN_UPDATE_URL)));
     }
 }
 
@@ -88,7 +88,7 @@ void Updater::replyFinished (QNetworkReply *reply)
          if (ourVersion < remoteVersion) {
 
              if (QMessageBox::warning(nullptr, QObject::tr("New version available"), QObject::tr("There is an update available.\nDo you want to go to download page?"), QMessageBox::Ok, QMessageBox::Cancel) == QMessageBox::Ok) {
-                 QString link = "http://github.com/zirtysperzys";
+                 QString link = "https://github.com/ZirtysPerzys/DRGL-wallet/releases";
                  QDesktopServices::openUrl(QUrl(link));
              }
 

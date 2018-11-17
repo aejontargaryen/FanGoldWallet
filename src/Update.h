@@ -10,7 +10,7 @@
 #include <QNetworkReply>
 #include <QUrl>
 
-const static QString KRBCOIN_UPDATE_URL = "http://karbo.io/download/update.txt";
+const static QString DRGLCOIN_UPDATE_URL = "http://drgl.info/update.txt";
 
 class Updater : public QObject
 {
