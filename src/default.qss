@@ -21,6 +21,7 @@ QMainWindow {
 QDialog {
 	background-color: #010101;
 }
+QFrame#TransferFrame QToolButton {
 
 QPushButton {padding: 2px 8px;}
 QToolButton {padding: 0 5px;}

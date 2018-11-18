@@ -291,8 +291,8 @@ elseif (UNIX)
         set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <aejontargaryen@pm.me>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Dragonglass wallet
- Dragonglass is a decentralized peer-to-peer anonymous
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "DRGL-Wallet
+ Dragonglass is a peer-to-peer decentralized anonymous
  cryptocurrency. It is open source, nobody owns or controls Dragonglass
  and everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}${CPACK_SYSTEM_NAME}")
@@ -304,8 +304,8 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
         set(CPACK_RPM_PACKAGE_SUMMARY "DRGL wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "DRGL wallet
- Dragonglass is a decentralized peer-to-peer anonymous
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "DRGL-Wallet
+ Dragonglass is a peer-to-peer decentralized anonymous
  cryptocurrency. It is open-source, nobody owns or controls Dragonglass
  and everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}${CPACK_SYSTEM_NAME}")
