@@ -68,5 +68,37 @@
     </qresource>
     <qresource prefix="/fonts">
         <file alias="mplusm">fonts/mplus-1m-medium.ttf</file>
+        <file alias="Game of Thrones">fonts/Game of Thrones.ttf</file>
+        <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
+        <file alias="Cinzel Decorative">fonts/CinzelDecorative-Regular.ttf</file>
+        <file alias="Onciale PhF">fonts/Onciale PhF01.ttf</file>
+        <file alias="Immortal">fonts/IMMORTAL.ttf</file>
+        <file alias="EagleLake">fonts/EagleLake-Regular.ttf</file>
+        <file alias="URW Gothic L">fonts/URW Gothic L.ttf</file>
     </qresource>
 </RCC>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

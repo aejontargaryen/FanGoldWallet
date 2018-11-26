@@ -250,13 +250,13 @@
        <property name="font">
         <font>
          <family>Game of Thrones</family>
-         <pointsize>13</pointsize>
+         <pointsize>14</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
          <underline>false</underline>
          <strikeout>false</strikeout>
-         <kerning>true</kerning>
+         <kerning>false</kerning>
         </font>
        </property>
        <property name="layoutDirection">
@@ -283,7 +283,7 @@ background-color: transparent;
         <number>0</number>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;Your account __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;DRACARYS __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
