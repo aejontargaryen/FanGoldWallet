@@ -5,19 +5,19 @@ Binaries are made available by community members. If you are able to compile on 
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/zirtysperzys/draegonglasswallet.git
+git clone https://github.com/zirtysperzys/DRGL-wallet.git
 ```
 
 **2. Set symbolic link to coin sources at the same level as `src`. For example:**
 
 ```
-ln -s ../DRGL cryptonote
+ln -s ../Dragonglass cryptonote
 ```
 
 Alternative way is to create git submodule:
 
 ```
-git submodule add https://github.com/zirtysperzys/DRGL.git cryptonote
+git submodule add https://github.com/zirtysperzys/Dragonglass.git cryptonote
 ```
 
 **3. Build**
