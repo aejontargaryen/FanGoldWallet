@@ -66,13 +66,13 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>24</height>
+         <height>25</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>24</height>
+         <height>25</height>
         </size>
        </property>
        <property name="palette">
@@ -292,7 +292,7 @@ background-color: transparent;
         <bool>true</bool>
        </property>
        <property name="alignment">
-        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        <set>Qt::AlignVCenter|Qt::AlignLeading|Qt::AlignLeft</set>
        </property>
        <property name="margin">
         <number>3</number>
@@ -886,7 +886,7 @@ background-color: transparent;
          <property name="maximumSize">
           <size>
            <width>16777215</width>
-           <height>24</height>
+           <height>25</height>
           </size>
          </property>
          <property name="palette">
@@ -1343,7 +1343,7 @@ background-color: transparent;
           <string>0.00</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+          <set>Qt::AlignVCenter|Qt::AlignRight|Qt::AlignTrailing</set>
          </property>
          <property name="margin">
           <number>0</number>
