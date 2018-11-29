@@ -2,6 +2,9 @@
 
 Binaries are made available by community members. If you are able to compile on your operating system, please consider helping others by adding to the release. Also if your OS is available, please consider donating to the community member who made it possible. 
 
+
+### Building on *nix
+
 **1. Clone wallet sources**
 
 ```
@@ -25,3 +28,6 @@ git submodule add https://github.com/zirtysperzys/Dragonglass.git cryptonote
 ```
 mkdir build && cd build && cmake .. && make
 ```
+### Build instructions for Mac
+Same as *nix build instructions.  But cmake will likely need your qt path, so 
+cmake -DCMAKE_PREFIX_PATH:STRING=<Qt path/Qt version/clang_64/> 
