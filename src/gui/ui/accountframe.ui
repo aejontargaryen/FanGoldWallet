@@ -283,7 +283,7 @@ background-color: transparent;
         <number>0</number>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;DRACARYS __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;IRONBORN __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -292,7 +292,7 @@ background-color: transparent;
         <bool>true</bool>
        </property>
        <property name="alignment">
-        <set>Qt::AlignVCenter|Qt::AlignLeading|Qt::AlignLeft</set>
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
        <property name="margin">
         <number>3</number>
@@ -1343,7 +1343,7 @@ background-color: transparent;
           <string>0.00</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignVCenter|Qt::AlignRight|Qt::AlignTrailing</set>
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="margin">
           <number>0</number>

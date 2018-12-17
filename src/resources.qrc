@@ -67,7 +67,7 @@
         <file>languages/qt_fr.qm</file>
     </qresource>
     <qresource prefix="/fonts">
-        <file alias="mplusm">fonts/mplus-1m-medium.ttf</file>
+	<file alias="mplusm">fonts/mplus-1m-medium.ttf</file>
         <file alias="Game of Thrones">fonts/Game of Thrones.ttf</file>
         <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
         <file alias="Cinzel Decorative">fonts/CinzelDecorative-Regular.ttf</file>
