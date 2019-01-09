@@ -283,7 +283,7 @@ background-color: transparent;
         <number>0</number>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ececec;&quot;&gt;IRONBORN __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . . . . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;I C E &lt;/span&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#42c6c6;&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;F I R E&lt;/span&gt;&lt;span style=&quot; color:#ececec;&quot;&gt; __________________________________T h e__ L o n g__ N i g h t__ I s__ C o m i n g . . . . .&lt;/span&gt;&lt;span style=&quot; color:#ec0000;&quot;&gt; .&lt;/span&gt;&lt;span style=&quot; color:#ececec;&quot;&gt; . .&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>

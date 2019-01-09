@@ -37,8 +37,8 @@ QToolButton {
 QPushButton, QToolButton {
 
 	line-height: 1.8;
-	background: transparent;
-	border: 2px outset #15315e;
+	background: #000;
+	border: 1px outset #15315e;
 	border-radius: 16px;
 	height: 26px;
 	selection-background-color: transparent;
@@ -47,13 +47,13 @@ QPushButton, QToolButton {
 
 QPushButton:hover, QToolButton:hover {
 	background-color: #000aa8;
-	border: 2px inset #15315e;
+	border: 2px inset #000000;
 }
 
 QPushButton:pressed,
 QToolButton:pressed {
 	background-color: #2150a8;
-	border: 2px inset #00aaff;
+	border: 1px inset #00aaff;
 }
 
 QPushButton:focus,
@@ -65,7 +65,7 @@ QToolButton:focus {
 QPushButton:disabled,
 QToolButton:disabled {
 	color: #000000;
-	background-color: #333333;
+	background-color: #444444;
 }
 
 QPushButton::focus:hover,
@@ -183,7 +183,7 @@ QSlider {
 	background: transparent;
 	background-image: url();
 	height: 30px;
-	border-radius: 4px;
+	border-radius: 15px;
 }
 
 QSlider::groove:horizontal {
@@ -195,7 +195,7 @@ QSlider::groove:horizontal {
 		stop: 0.85 #bcebff,
 		stop: 1 #e0f3ff);
 	height: 5px;
-	border-radius: 4px;
+	border-radius: 15px;
 	
 }
 
@@ -204,14 +204,14 @@ QSlider::sub-page:horizontal {
 	background-image: url();
 	border: 2px solid #87d3ff;
 	height: 5px;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 QSlider::add-page:horizontal {
 	background: white;
 	border: 2px solid #87d3ff;
 	height: 5px;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 QSlider::handle:horizontal {
@@ -289,26 +289,36 @@ QToolBar#toolBar QToolButton{
 }
 
 QToolBar#toolBar QToolButton:pressed {
-	background-color: #121212;
+	background-color: #000000;
 	border: 2px inset #000cc1;
 	border-radius: 30px;
+	font-size: 12px;
+	color: aqua;
 }
 
 QToolBar#toolBar QToolButton:checked {
 	background-color: #101010;
-	border: 2px inset #000aa8;
+	border: 5px ridge #00c0ff;
 	border-radius: 30px;
+	font-size: 18px;
+	color: #fff;
+
 }
 
 QToolBar#toolBar QToolButton:hover {
-	border: 2px inset #15315e;
+	border: 2px inset #080808;
+	background-color: #080808
 	border-radius: 30px;
+	font-size: 15px;
+	color: #fff;
 }
 
 QToolBar#toolBar QToolButton::checked:hover {
-	background-color: #121212;
-	border: 2px ridge #15315e;
+	background-color: #101010;
+	border: 4px ridge #00c0ff;
 	border-radius: 30px;
+	font-size: 17px;
+	color: #fff;
 }
 
 
