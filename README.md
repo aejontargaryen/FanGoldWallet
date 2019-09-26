@@ -8,7 +8,7 @@ Binaries are made available by community members. If you are able to compile on 
 **1. Clone wallet sources**
 
 ```
-git clone --recursive https://github.com/ZirtysPerzys/DRGL
+git clone --recursive https://github.com/ZirtysPerzys/DRGLwallet
 ```
 
 ```
@@ -21,6 +21,11 @@ cd DRGL
 mkdir build && cd build && cmake .. && make
 ```
 ### Build instructions for Mac
-Same as *nix build instructions.  But cmake will likely need your qt path, so 
+Same as *nix build instructions but cmake will likely need your qt path, so :
+```
 cmake -DCMAKE_PREFIX_PATH:STRING=<Qt path/Qt version/clang_64/> 
-Additional build step to bundle static libraries with app package: <Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/DRAGONGLASS.app
+```
+Additional build step to bundle static libraries with app package:
+```
+<Qt path/Qt version/clang_64/bin/macdeployqt> <path to your project/build/DRAGONGLASS.app
+```
