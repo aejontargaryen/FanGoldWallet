@@ -491,7 +491,7 @@ QString WalletAdapter::walletErrorMessage(int _error_code) {
     case CryptoNote::error::WalletErrorCodes::CHANGE_ADDRESS_NOT_FOUND:      return tr("Change address not found");
     case CryptoNote::error::WalletErrorCodes::DESTINATION_ADDRESS_REQUIRED:  return tr("Destination address required");
     case CryptoNote::error::WalletErrorCodes::DESTINATION_ADDRESS_NOT_FOUND: return tr("Destination address not found");
-    case CryptoNote::error::WalletErrorCodes::BAD_PAYMENT_ID:                return tr("Wrong payment id format");
+    case CryptoNote::error::WalletErrorCodes::BAD_PAYMENT_ID:                return tr("Wrong Payment ID format");
     case CryptoNote::error::WalletErrorCodes::BAD_TRANSACTION_EXTRA:         return tr("Wrong transaction extra format");
     default:                                                                 return tr("Unknown error");
   }
@@ -573,7 +573,7 @@ void WalletAdapter::updateBlockStatusText() {
   const QDateTime blockTime = NodeAdapter::instance().getLastLocalBlockTimestamp();
   quint64 blockAge = blockTime.msecsTo(currentTime);
   const QString warningString = blockTime.msecsTo(currentTime) < LAST_BLOCK_INFO_WARNING_INTERVAL ? "" :
-    QString(tr("  Warning: last block was received %1 hours %2 minutes ago")).arg(blockAge / MSECS_IN_HOUR).arg(blockAge % MSECS_IN_HOUR / MSECS_IN_MINUTE);
+    QString(tr("  Warning: last block was received %1 HOURS %2 minutes ago")).arg(blockAge / MSECS_IN_HOUR).arg(blockAge % MSECS_IN_HOUR / MSECS_IN_MINUTE);
   Q_EMIT walletStateChangedSignal(QString(tr("Wallet synchronized. Height: %1  |  Time (UTC): %2%3")).
     arg(NodeAdapter::instance().getLastLocalBlockHeight()).
     arg(QLocale(QLocale::English).toString(blockTime, "dd.MM.yyyy, HH:mm:ss")).

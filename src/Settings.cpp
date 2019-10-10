@@ -103,7 +103,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "ice.zirtysperzys.info:18180" << "fire.zirtysperzys.online:18180" << "mine.drgl.online:18181"; 
+  defaultNodesList << "ice.zirtysperzys.info:18180" << "176.223.134.27:18180" << "fire.zirtysperzys.online:18180"; 
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {

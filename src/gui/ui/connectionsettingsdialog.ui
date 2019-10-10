@@ -9,12 +9,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>604</width>
-    <height>388</height>
+    <width>612</width>
+    <height>420</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Connection settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="2" column="0">
@@ -61,8 +64,45 @@
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
        <property name="text">
-        <string>Auto selection</string>
+        <string>A&amp;uto selection</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -74,6 +114,10 @@
        <property name="enabled">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: cinzel;
+color: rgb(243, 243, 243);</string>
+       </property>
        <property name="text">
         <string>Wallet will connect to local daemon on default port. In case of no local daemon running it will launch built-in node.</string>
        </property>
@@ -84,6 +128,43 @@
      </item>
      <item row="2" column="0">
       <widget class="QRadioButton" name="radioButton_2">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
        <property name="text">
         <string>Embedded</string>
        </property>
@@ -93,6 +174,10 @@
       <widget class="QLabel" name="label_2">
        <property name="enabled">
         <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: cinzel;
+color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
         <string>Built-in embedded node will be used.</string>
@@ -104,8 +189,45 @@
      </item>
      <item row="4" column="0">
       <widget class="QRadioButton" name="radioButton_3">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
        <property name="text">
-        <string>Local daemon</string>
+        <string>&amp;Local daemon</string>
        </property>
       </widget>
      </item>
@@ -132,7 +254,7 @@
          <property name="value">
           <number>18180</number>
          </property>
-         <property name="displayIntegerBase" stdset="0">
+         <property name="displayIntegerBase">
           <number>10</number>
          </property>
         </widget>
@@ -157,6 +279,10 @@
        <property name="enabled">
         <bool>false</bool>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: cinzel;
+color: rgb(243, 243, 243);</string>
+       </property>
        <property name="text">
         <string>Wallet will connect to local daemon on specified port.</string>
        </property>
@@ -167,8 +293,45 @@
      </item>
      <item row="6" column="0">
       <widget class="QRadioButton" name="radioButton_4">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>1</red>
+             <green>255</green>
+             <blue>230</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
        <property name="text">
-        <string>Remote daemon</string>
+        <string>Remo&amp;te daemon</string>
        </property>
       </widget>
      </item>
@@ -244,11 +407,15 @@
        <property name="minimumSize">
         <size>
          <width>0</width>
-         <height>40</height>
+         <height>82</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font-family: Cinzel;
+color: rgb(243, 243, 243);</string>
+       </property>
        <property name="text">
-        <string>Wallet will connect to remote node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 DRGL.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wallet will connect to a service node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 𝐅&lt;span style=&quot; font-size:10pt;&quot;&gt;₲&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -262,10 +429,13 @@
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>20</width>
-       <height>40</height>
+       <width>0</width>
+       <height>20</height>
       </size>
      </property>
     </spacer>

@@ -34,11 +34,20 @@
         <x>0</x>
         <y>0</y>
         <width>846</width>
-        <height>421</height>
+        <height>431</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="m_send_frame_layout">
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
@@ -65,6 +74,9 @@
      </property>
      <item row="1" column="3">
       <widget class="QCheckBox" name="donateCheckBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="palette">
         <palette>
          <active>
@@ -490,7 +502,7 @@
         <bool>true</bool>
        </property>
        <property name="checked">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="tristate">
         <bool>false</bool>
@@ -517,7 +529,7 @@
       <widget class="QLineEdit" name="m_mixinEdit">
        <property name="minimumSize">
         <size>
-         <width>35</width>
+         <width>40</width>
          <height>0</height>
         </size>
        </property>
@@ -610,7 +622,7 @@
      <item row="3" column="1" colspan="3">
       <widget class="QLineEdit" name="m_paymentIdEdit">
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font: 14pt capsuula;</string>
        </property>
        <property name="maxLength">
         <number>64</number>
@@ -824,7 +836,7 @@
         <string>Wallet is connected through remote node. Additional 0.25% fee will be applied.</string>
        </property>
        <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
+        <string notr="true">color:#fff;</string>
        </property>
        <property name="text">
         <string>Remote node mode</string>
@@ -885,11 +897,7 @@
        </property>
        <property name="font">
         <font>
-         <family>FreeSerif</family>
-         <pointsize>9</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
+         <pointsize>12</pointsize>
         </font>
        </property>
        <property name="toolTip">
@@ -899,10 +907,10 @@
         <string/>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(227, 243, 248);</string>
+        <string notr="true">font-size: 12pt;</string>
        </property>
        <property name="text">
-        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#deeff3;&quot;&gt;DRGL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#d3d7cf;&quot;&gt;FG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::AutoText</enum>

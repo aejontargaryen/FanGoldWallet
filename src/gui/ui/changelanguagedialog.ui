@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>245</width>
+    <width>329</width>
     <height>92</height>
    </rect>
   </property>
@@ -21,7 +21,7 @@
        <property name="font">
         <font>
          <family>Theuerdank Fraktur</family>
-         <pointsize>17</pointsize>
+         <pointsize>14</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>

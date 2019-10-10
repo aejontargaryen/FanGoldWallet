@@ -43,7 +43,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="splash">images/splash.png</file>
-        <file alias="cryptonote">images/dragonglass.png</file>
+        <file alias="cryptonote">images/FanG.png</file>
         <file alias="clock">images/clock.gif</file>
         <file alias="handle.png">images/handle.png</file>
         <file alias="background.png">images/background.png</file>
@@ -67,14 +67,12 @@
         <file>languages/qt_fr.qm</file>
     </qresource>
     <qresource prefix="/fonts">
-	<file alias="mplusm">fonts/mplus-1m-medium.ttf</file>
-        <file alias="Game of Thrones">fonts/Game of Thrones.ttf</file>
         <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
-        <file alias="Cinzel Decorative">fonts/CinzelDecorative-Regular.ttf</file>
-        <file alias="Onciale PhF">fonts/Onciale PhF01.ttf</file>
-        <file alias="Immortal">fonts/IMMORTAL.ttf</file>
-        <file alias="EagleLake">fonts/EagleLake-Regular.ttf</file>
-        <file alias="URW Gothic L">fonts/URW Gothic L.ttf</file>
+        <file alias="Unique">fonts/Unique.ttf</file>
+        <file alias="Capsuula">fonts/Capsuula.ttf</file>
+	<file alias="Idlewild">fonts/Idlewild-Light.otf</file>
+        <file alias="Dual">fonts/Dual-300.ttf</file>
+        <file alias="ZELDA">fonts/ZELDA.ttf</file>
     </qresource>
 </RCC>
 

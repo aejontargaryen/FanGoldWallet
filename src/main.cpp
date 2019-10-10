@@ -1,5 +1,7 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2016-2017 The Karbowanec developers
+// Copyright (c) 2017-2019 The FandomGOLD developers
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include <QApplication>
@@ -138,7 +140,7 @@ int main(int argc, char* argv[]) {
 
   QLockFile lockFile(Settings::instance().getDataDir().absoluteFilePath(QApplication::applicationName() + ".lock"));
   if (!lockFile.tryLock()) {
-    QMessageBox::warning(nullptr, QObject::tr("Fail"), QObject::tr("%1 wallet already running").arg(CurrencyAdapter::instance().getCurrencyDisplayName()));
+    QMessageBox::warning(nullptr, QObject::tr("Fail"), QObject::tr("%1 wallet is already running").arg(CurrencyAdapter::instance().getCurrencyDisplayName()));
     return 0;
   }
 
@@ -150,7 +152,7 @@ int main(int argc, char* argv[]) {
     splash->show();
   }
 
-  splash->showMessage(QObject::tr("Loading {Dragonglass} blockchain network...."), Qt::AlignLeft | Qt::AlignBottom, Qt::white);
+  splash->showMessage(QObject::tr("Loading Fandom GOLD blockchain network...."), Qt::AlignLeft | Qt::AlignBottom, Qt::white);
 
   app.processEvents();
   qRegisterMetaType<CryptoNote::TransactionId>("CryptoNote::TransactionId");

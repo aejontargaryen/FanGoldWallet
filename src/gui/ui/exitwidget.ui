@@ -462,7 +462,7 @@
       <string notr="true">background-color: rgb(25, 25, 25);</string>
      </property>
      <property name="text">
-      <string>%1 wallet is saving data.
+      <string> %1 wallet is saving data.
 Please wait...</string>
      </property>
     </widget>
