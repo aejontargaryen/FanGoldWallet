@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fandom Gold
+GenericName=GoldWallet
+Comment=Fandom Gold Wallet
+Exec=fandomgold %U
+Terminal=false
+Type=Application
+Icon=FandomGold
+MimeType=x-scheme-handler/fandomgold;
+Categories=Office;Finance;
+Version=2.0.3
+
+Name[en_US]=GoldWallet.desktop

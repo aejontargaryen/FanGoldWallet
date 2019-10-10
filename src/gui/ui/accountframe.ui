@@ -256,8 +256,8 @@ font: &quot;URW Gothic L&quot;;</string>
        </property>
        <property name="font">
         <font>
-         <family>Idlewild</family>
-         <pointsize>12</pointsize>
+         <family>orbitron</family>
+         <pointsize>18</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -274,7 +274,7 @@ font: &quot;URW Gothic L&quot;;</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: transparent;
-font: 12pt &quot;Idlewild&quot;;
+font: 18pt &quot;orbitron&quot;;
 </string>
        </property>
        <property name="frameShape">
@@ -290,7 +290,7 @@ font: 12pt &quot;Idlewild&quot;;
         <number>0</number>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Unlock the Power of &lt;span style=&quot; font-weight:600;&quot;&gt;Fandom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Unlock the Power of Fandom&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::AutoText</enum>
@@ -1269,7 +1269,7 @@ font: 14pt Capsuula;
           <number>0</number>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#c4a000; vertical-align:super;&quot;&gt;₲&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#edd400; vertical-align:super;&quot;&gt;₲&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::AutoText</enum>

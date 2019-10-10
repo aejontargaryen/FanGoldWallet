@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2016-2017 The Karbowanec developers
-// Copyright (c) 2017-2019 The FandomGOLD developers
+// Copyright (c) 2017-2019 The Fandom Gold Project
 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -108,10 +108,10 @@ int main(int argc, char* argv[]) {
   }
 
   //Create registry entries for URL execution
-  QSettings karbowanecKey("HKEY_CLASSES_ROOT\\DRGL", QSettings::NativeFormat);
-  karbowanecKey.setValue(".", "DRGL Wallet");
+  QSettings karbowanecKey("HKEY_CLASSES_ROOT\\FandomGold", QSettings::NativeFormat);
+  karbowanecKey.setValue(".", "Fandom Gold Wallet");
   karbowanecKey.setValue("URL Protocol", "");
-  QSettings karbowanecOpenKey("HKEY_CLASSES_ROOT\\DRGL\\shell\\open\\command", QSettings::NativeFormat);
+  QSettings karbowanecOpenKey("HKEY_CLASSES_ROOT\\FandomGold\\shell\\open\\command", QSettings::NativeFormat);
   karbowanecOpenKey.setValue(".", "\"" + QCoreApplication::applicationFilePath().replace("/", "\\") + "\" \"%1\"");
 #endif
 
@@ -120,7 +120,7 @@ int main(int argc, char* argv[]) {
   QProcess exec;
 
   //as root
-  args << "-c" << "printf '[Desktop Entry]\\nName = DRGL URL Handler\\nGenericName = DRGL\\nComment = Handle URL Sheme dragonglass://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/dragonglass;\\nIcon = DRGL-Wallet' | tee /usr/share/applications/dragonglass-handler.desktop";
+  args << "-c" << "printf '[Desktop Entry]\\nName = Fandom Gold URL Handler\\nGenericName = FanGo\\nComment = Handle URL Sheme fandomgold://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/fandomgold;\\nIcon = Gold Wallet' | tee /usr/share/applications/fandomgold-handler.desktop";
   exec.start("/bin/sh", args);
   exec.waitForFinished();
 

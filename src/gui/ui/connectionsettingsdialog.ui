@@ -115,11 +115,11 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-family: cinzel;
+        <string notr="true">font-family: orbitron;
 color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
-        <string>Wallet will connect to local daemon on default port. In case of no local daemon running it will launch built-in node.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffebc8;&quot;&gt;Wallet will connect to local daemon on default port. In case of no local daemon running it will launch built-in node.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -176,7 +176,7 @@ color: rgb(243, 243, 243);</string>
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-family: cinzel;
+        <string notr="true">font-family: orbitron;
 color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
@@ -280,11 +280,11 @@ color: rgb(243, 243, 243);</string>
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-family: cinzel;
+        <string notr="true">font-family: orbitron;
 color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
-        <string>Wallet will connect to local daemon on specified port.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;Wallet will connect to local daemon on specified port.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -411,11 +411,11 @@ color: rgb(243, 243, 243);</string>
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-family: Cinzel;
+        <string notr="true">font-family: orbitron;
 color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wallet will connect to a service node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 𝐅&lt;span style=&quot; font-size:10pt;&quot;&gt;₲&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;Wallet will connect to a service node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 𝐅&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#c4a000;&quot;&gt;₲&lt;/span&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
