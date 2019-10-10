@@ -30,6 +30,11 @@
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true"/>
        </property>
@@ -46,6 +51,11 @@
          <height>0</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true"/>
        </property>
@@ -53,8 +63,18 @@
      </item>
      <item>
       <widget class="QLineEdit" name="m_searchFor">
+       <property name="font">
+        <font>
+         <family>Capsuula</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">font: 14pt Capsuula;
+color: #F3F3F3;</string>
        </property>
        <property name="placeholderText">
         <string>Search for address, amount, transaction hash or Payment ID</string>
@@ -233,21 +253,30 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>237</red>
+           <green>212</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="HighlightedText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>223</red>
-           <green>223</green>
-           <blue>223</blue>
+           <red>46</red>
+           <green>52</green>
+           <blue>54</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="AlternateBase">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>134</red>
-           <green>134</green>
-           <blue>134</blue>
+           <red>186</red>
+           <green>189</green>
+           <blue>182</blue>
           </color>
          </brush>
         </colorrole>
@@ -289,21 +318,30 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>237</red>
+           <green>212</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="HighlightedText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>223</red>
-           <green>223</green>
-           <blue>223</blue>
+           <red>46</red>
+           <green>52</green>
+           <blue>54</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="AlternateBase">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>134</red>
-           <green>134</green>
-           <blue>134</blue>
+           <red>186</red>
+           <green>189</green>
+           <blue>182</blue>
           </color>
          </brush>
         </colorrole>
@@ -345,21 +383,30 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>237</red>
+           <green>212</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="HighlightedText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>223</red>
-           <green>223</green>
-           <blue>223</blue>
+           <red>46</red>
+           <green>52</green>
+           <blue>54</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="AlternateBase">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>134</red>
-           <green>134</green>
-           <blue>134</blue>
+           <red>186</red>
+           <green>189</green>
+           <blue>182</blue>
           </color>
          </brush>
         </colorrole>
@@ -367,7 +414,10 @@
       </palette>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(12, 12, 12);</string>
+      <string notr="true">background-color: rgb(12, 12, 12);
+alternate-background-color: rgb(186, 189, 182);
+selection-color: rgb(46, 52, 54);
+selection-background-color: rgb(237, 212, 0);</string>
      </property>
      <property name="editTriggers">
       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::CurrentChanged|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>

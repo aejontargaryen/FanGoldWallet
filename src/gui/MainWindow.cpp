@@ -2,6 +2,7 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016-2018 The Karbowanec developers
+// Copyright (c) 2018-2019 The Fandom Gold developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,6 +16,7 @@
 #include <QTimer>
 #include <QDebug>
 #include <QDateTime>
+#include <QFont>
 #include <QFontDatabase>
 #include <Common/Base58.h>
 #include <Common/StringTools.h>
@@ -74,7 +76,7 @@ MainWindow::MainWindow() : QMainWindow(), m_ui(new Ui::MainWindow), m_trayIcon(n
   m_ui->setupUi(this);
   m_connectionStateIconLabel = new QPushButton();
   m_connectionStateIconLabel->setFlat(true); // Make the button look like a label, but clickable
-  m_connectionStateIconLabel->setStyleSheet(".QPushButton { background-color: rgba(255, 255, 255, 0);}");
+  m_connectionStateIconLabel->setStyleSheet(".QPushButton { border: 0; background-color: rgba(255, 255, 255, 0);}");
   m_connectionStateIconLabel->setMaximumSize(16, 16);
   m_encryptionStateIconLabel = new QLabel(this);
   m_trackingModeIconLabel = new QLabel(this);
@@ -83,6 +85,32 @@ MainWindow::MainWindow() : QMainWindow(), m_ui(new Ui::MainWindow), m_trayIcon(n
   connectToSignals();
   initUi();
   walletClosed();
+
+  int id1 = QFontDatabase::addApplicationFont(":/fonts/Cinzel");
+  QFont font1;
+  font1.setFamily("Cinzel");
+  font1.setPixelSize(14);
+  int id2 = QFontDatabase::addApplicationFont(":/fonts/ZELDA");
+  QFont font2;
+  font2.setFamily("ZELDA");
+  font2.setPixelSize(14);
+  int id3 = QFontDatabase::addApplicationFont(":/fonts/Idlewild");
+  QFont font3;
+  font3.setFamily("Idlewild");
+  font3.setPixelSize(8);
+  int id4 = QFontDatabase::addApplicationFont(":/fonts/Capsuula");
+  QFont font4;
+  font4.setFamily("Capsuula");
+  font4.setPixelSize(12);
+  m_ui->m_accountFrame->setFont(font4);
+  int id5 = QFontDatabase::addApplicationFont(":/fonts/Unique");
+  QFont font5;
+  font5.setFamily("Unique");
+  font5.setPixelSize(12);
+  int id6 = QFontDatabase::addApplicationFont(":/fonts/Dual");
+  QFont font6;
+  font6.setFamily("Dual");
+  font6.setPixelSize(12);
 }
 
 MainWindow::~MainWindow() {
@@ -117,7 +145,7 @@ void MainWindow::connectToSignals() {
 }
 
 void MainWindow::initUi() {
-  setWindowTitle(QString(tr("DRGL Wallet %1")).arg(Settings::instance().getVersion()));
+  setWindowTitle(QString(tr("Fandom Gold Wallet %1")).arg(Settings::instance().getVersion()));
 #ifdef Q_OS_WIN32
   createTrayIcon();
 #endif
@@ -162,7 +190,7 @@ void MainWindow::initUi() {
   m_remoteModeIconLabel->hide();
   m_trackingModeIconLabel->hide();
   m_trackingModeIconLabel->setToolTip(tr("Tracking wallet. Spending unavailable"));
-  m_remoteModeIconLabel->setToolTip(tr("Connected through remote node"));
+  m_remoteModeIconLabel->setToolTip(tr("Connected by FANDOM GOLD service node"));
 
   QString connection = Settings::instance().getConnection();
   if(connection.compare("remote") == 0) {
@@ -557,7 +585,7 @@ void MainWindow::DisplayCmdLineHelp() {
     QMessageBox *msg = new QMessageBox(QMessageBox::Information, QObject::tr("Help"),
                        cmdLineParser.getHelpText(),
                        QMessageBox::Ok, this);
-    msg->setInformativeText(tr("More info can be found at www.karbowanec.com in Documentation section"));
+    msg->setInformativeText(tr("More info can be found at Fandom Gold wiki on https://github.com/FandomGold/fandomgold/wiki"));
     QFont font = QFontDatabase::systemFont(QFontDatabase::FixedFont);
     msg->setFont(font);
     QSpacerItem* horizontalSpacer = new QSpacerItem(650, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -896,7 +924,7 @@ void MainWindow::createTrayIcon()
 {
 #ifdef Q_OS_WIN
     m_trayIcon = new QSystemTrayIcon(QPixmap(":images/cryptonote"), this);
-    QString toolTip = QString(tr("DRGL Wallet %1")).arg(Settings::instance().getVersion());
+    QString toolTip = QString(tr("Fandom Gold Wallet %1")).arg(Settings::instance().getVersion());
     m_trayIcon->setToolTip(toolTip);
     m_trayIcon->show();
 #endif

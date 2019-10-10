@@ -6,6 +6,7 @@
 #include <QClipboard>
 #include <QTimer>
 #include <QFontDatabase>
+#include <QFont>
 #include "AccountFrame.h"
 #include "WalletAdapter.h"
 #include "CurrencyAdapter.h"
@@ -20,12 +21,6 @@ AccountFrame::AccountFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::Acc
   connect(&WalletAdapter::instance(), &WalletAdapter::walletActualBalanceUpdatedSignal, this, &AccountFrame::updateWalletBalance,
     Qt::QueuedConnection);
   connect(&WalletAdapter::instance(), &WalletAdapter::walletCloseCompletedSignal, this, &AccountFrame::reset);
-
-  int id = QFontDatabase::addApplicationFont(":/fonts/mplusm");
-  QString family = QFontDatabase::applicationFontFamilies(id).at(0);
-  QFont monospace(family);
-  monospace.setPixelSize(15);
-  m_ui->m_addressLabel->setFont(monospace);
 }
 
 AccountFrame::~AccountFrame() {

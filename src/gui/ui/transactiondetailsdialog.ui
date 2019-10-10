@@ -17,7 +17,8 @@
    <item>
     <widget class="QTextBrowser" name="m_detailsBrowser">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(12, 12, 12);</string>
+      <string notr="true">background-color: rgb(12, 12, 12);
+font-family: Dual;</string>
      </property>
     </widget>
    </item>

@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016-2017 The Karbowanec developers
+// Copyright (c) 2018-2019 The Fandom Gold Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,7 +67,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (hashRate == 0) {
       return;
     }
-    m_ui->m_poolLabel->setText(tr("Mining {DRGL} alongside your Bannermen - Your Hashrate sent to pool is %1 H/s").arg(hashRate));
+    m_ui->m_poolLabel->setText(tr("Pool mining Fandom Gold - Your Hashrate sent to pool is %1 H/s").arg(hashRate));
     return;
   }
 
@@ -75,7 +76,7 @@ void MiningFrame::timerEvent(QTimerEvent* _event) {
     if (soloHashRate == 0) {
       return;
     }
-    m_ui->m_soloLabel->setText(tr("Solo mining {Dragonglass} - Your Hashrate is %1 H/s").arg(soloHashRate));
+    m_ui->m_soloLabel->setText(tr("Solo mining Fandom Gold - Your Hashrate is %1 H/s").arg(soloHashRate));
     return;
   }
 

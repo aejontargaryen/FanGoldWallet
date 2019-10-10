@@ -27,7 +27,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="m_uriEdit"/>
+      <widget class="QLineEdit" name="m_uriEdit">
+       <property name="styleSheet">
+        <string notr="true">font-family:Unique;</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>

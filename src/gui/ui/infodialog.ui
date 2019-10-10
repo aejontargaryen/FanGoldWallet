@@ -10,14 +10,14 @@
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>343</height>
+    <height>379</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Information</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(72, 72, 72);</string>
+   <string notr="true"/>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -310,6 +310,9 @@
           </disabled>
          </palette>
         </property>
+        <property name="styleSheet">
+         <string notr="true">font: 13pt Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -330,6 +333,9 @@
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="m_peerList">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1189,6 +1195,9 @@
       </item>
       <item row="0" column="1">
        <widget class="QLabel" name="m_height">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1209,6 +1218,9 @@
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="m_blockTime">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1229,6 +1241,9 @@
       </item>
       <item row="2" column="1">
        <widget class="QLabel" name="m_difficulty">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1249,6 +1264,9 @@
       </item>
       <item row="3" column="1">
        <widget class="QLabel" name="m_txCount">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1387,6 +1405,10 @@
           </disabled>
          </palette>
         </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;
+</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -1407,6 +1429,10 @@
       </item>
       <item row="5" column="1">
        <widget class="QLabel" name="m_altBlocksCount">
+        <property name="styleSheet">
+         <string notr="true">font-family: Dual;
+</string>
+        </property>
         <property name="text">
          <string/>
         </property>

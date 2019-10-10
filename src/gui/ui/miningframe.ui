@@ -150,6 +150,11 @@
         </item>
         <item row="0" column="3">
          <widget class="QLabel" name="m_poolLabel">
+          <property name="styleSheet">
+           <string notr="true">font-family: Capsuula;
+font-weight: bold;
+color: #9e9100;</string>
+          </property>
           <property name="text">
            <string>Stopped</string>
           </property>
@@ -295,6 +300,11 @@
       </item>
       <item row="0" column="3">
        <widget class="QLabel" name="m_soloLabel">
+        <property name="styleSheet">
+         <string notr="true">font-family: Capsuula;
+font-weight: bold;
+color: #9e9100;</string>
+        </property>
         <property name="text">
          <string>Stopped</string>
         </property>

@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>626</width>
-    <height>150</height>
+    <width>600</width>
+    <height>250</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>600</width>
-    <height>150</height>
+    <height>250</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -29,6 +29,9 @@
    <iconset resource="../../resources.qrc">
     <normaloff>:/images/cryptonote</normaloff>:/images/cryptonote</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -37,6 +40,28 @@
      </property>
      <item>
       <widget class="QTextEdit" name="m_trackingKeyEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt Unique;
+</string>
+       </property>
        <property name="readOnly">
         <bool>true</bool>
        </property>
@@ -49,8 +74,21 @@
    </item>
    <item>
     <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt Cinzel;
+</string>
+     </property>
      <property name="text">
-      <string>Tracking key allows to see all incoming transactions of this wallet. It does not allow to spend funds.</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tracking key allows only to see all incoming transactions of this wallet. It does &lt;span style=&quot; text-decoration: underline;&quot;&gt;not&lt;/span&gt; allow to spend funds.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
      </property>
     </widget>
    </item>
