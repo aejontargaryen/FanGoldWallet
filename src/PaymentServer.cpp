@@ -1,5 +1,7 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2016 The Karbowanec developers
+// Copyright (c) 2018-2019 Fandom Gold Project
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -23,11 +25,11 @@ using namespace boost;
 using namespace WalletGui;
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("dragonglass:");
+const QString BITCOIN_IPC_PREFIX("fandomgold:");
 
 static QString ipcServerName()
 {
-    QString name("dragonglass");
+    QString name("fandomgold");
 
     return name;
 }
@@ -82,7 +84,7 @@ bool PaymentServer::ipcSendCommandLine()
 
 PaymentServer::PaymentServer(QApplication* parent) : QObject(parent), saveURIs(true)
 {
-    // Install global event filter to catch QFileOpenEvents on the mac (sent when you click dragonglass: links)
+    // Install global event filter to catch QFileOpenEvents on the mac (sent when you click fandomgold: links)
     parent->installEventFilter(this);
 
     QString name = ipcServerName();
@@ -93,7 +95,7 @@ PaymentServer::PaymentServer(QApplication* parent) : QObject(parent), saveURIs(t
     uriServer = new QLocalServer(this);
 
     if (!uriServer->listen(name))
-        qDebug() << tr("Cannot start {Dragonglass}: click-to-pay handler");
+        qDebug() << tr("Cannot start {FandomGold}: click-to-pay handler");
     else
         connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));
 }

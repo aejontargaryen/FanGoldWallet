@@ -150,10 +150,18 @@
         </item>
         <item row="0" column="3">
          <widget class="QLabel" name="m_poolLabel">
+          <property name="font">
+           <font>
+            <family>Capsuula</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
           <property name="styleSheet">
            <string notr="true">font-family: Capsuula;
 font-weight: bold;
-color: #9e9100;</string>
+color: rgb(237, 212, 0);</string>
           </property>
           <property name="text">
            <string>Stopped</string>
@@ -300,10 +308,18 @@ color: #9e9100;</string>
       </item>
       <item row="0" column="3">
        <widget class="QLabel" name="m_soloLabel">
+        <property name="font">
+         <font>
+          <family>Capsuula</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">font-family: Capsuula;
 font-weight: bold;
-color: #9e9100;</string>
+color: rgb(237, 212, 0);</string>
         </property>
         <property name="text">
          <string>Stopped</string>
@@ -493,7 +509,7 @@ color: #9e9100;</string>
   <slot>addPoolClicked()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="m_miningButtonGroup"/>
   <buttongroup name="m_soloButtonGroup"/>
+  <buttongroup name="m_miningButtonGroup"/>
  </buttongroups>
 </ui>

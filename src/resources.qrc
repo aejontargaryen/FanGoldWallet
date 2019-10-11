@@ -47,6 +47,7 @@
         <file alias="clock">images/clock.gif</file>
         <file alias="handle.png">images/handle.png</file>
         <file alias="background.png">images/background.png</file>
+        <file alias="screen">images/screen.png</file>
     </qresource>
     <qresource prefix="/skin">
         <file>default.qss</file>
@@ -70,7 +71,7 @@
         <file alias="Cinzel">fonts/Cinzel-Regular.ttf</file>
         <file alias="Unique">fonts/Unique.ttf</file>
         <file alias="Capsuula">fonts/Capsuula.ttf</file>
-	<file alias="Idlewild">fonts/Idlewild-Light.otf</file>
+	<file alias="Orbitron">fonts/Orbitron-Light.ttf</file>
         <file alias="Dual">fonts/Dual-300.ttf</file>
         <file alias="ZELDA">fonts/ZELDA.ttf</file>
     </qresource>

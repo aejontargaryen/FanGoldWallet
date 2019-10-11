@@ -2,7 +2,7 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016-2018 The Karbowanec developers
-// Copyright (c) 2018-2019 The Fandom Gold developers
+// Copyright (c) 2018-2019 The Fandom Gold Project
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -94,10 +94,10 @@ MainWindow::MainWindow() : QMainWindow(), m_ui(new Ui::MainWindow), m_trayIcon(n
   QFont font2;
   font2.setFamily("ZELDA");
   font2.setPixelSize(14);
-  int id3 = QFontDatabase::addApplicationFont(":/fonts/Idlewild");
+  int id3 = QFontDatabase::addApplicationFont(":/fonts/Orbitron");
   QFont font3;
-  font3.setFamily("Idlewild");
-  font3.setPixelSize(8);
+  font3.setFamily("Orbitron");
+  font3.setPixelSize(12);
   int id4 = QFontDatabase::addApplicationFont(":/fonts/Capsuula");
   QFont font4;
   font4.setFamily("Capsuula");
