@@ -88,7 +88,7 @@ void Updater::replyFinished (QNetworkReply *reply)
          if (ourVersion < remoteVersion) {
 
              if (QMessageBox::warning(nullptr, QObject::tr("New version available"), QObject::tr("There is an update available.\nDo you want to go to download page?"), QMessageBox::Ok, QMessageBox::Cancel) == QMessageBox::Ok) {
-                 QString link = "https://github.com/ZirtysPerzys/DRGL-wallet/releases";
+                 QString link = "https://github.com/FandomGold/GoldWallet/releases";
                  QDesktopServices::openUrl(QUrl(link));
              }
 
