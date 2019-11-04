@@ -42,7 +42,7 @@
   </property>
   <property name="font">
    <font>
-    <family>ZELDA</family>
+    <family>GothamB</family>
    </font>
   </property>
   <property name="windowTitle">
@@ -53,7 +53,7 @@
     <normaloff>:/images/cryptonote</normaloff>:/images/cryptonote</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">font-family:&quot;ZELDA&quot;;</string>
+   <string notr="true">font-family:&quot;GothamB&quot;;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -139,7 +139,7 @@
       </property>
       <property name="font">
        <font>
-        <family>ZELDA</family>
+        <family>GothamB</family>
        </font>
       </property>
       <property name="styleSheet">
@@ -160,6 +160,12 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Capsuula</family>
+        <pointsize>13</pointsize>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">font-family: &quot;Capsuula&quot;;</string>

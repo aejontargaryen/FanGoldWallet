@@ -72,7 +72,8 @@
         <file alias="Unique">fonts/Unique.ttf</file>
         <file alias="Capsuula">fonts/Capsuula.ttf</file>
 	<file alias="Orbitron">fonts/Orbitron-Light.ttf</file>
-        <file alias="Dual">fonts/Dual-300.ttf</file>
+        <file alias="GothamB">fonts/GothamBook.ttf</file>
+        <file alias="GothamL">fonts/GothamLight.ttf</file>
         <file alias="ZELDA">fonts/ZELDA.ttf</file>
     </qresource>
 </RCC>
