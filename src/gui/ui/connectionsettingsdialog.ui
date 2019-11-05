@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
+    <width>729</width>
     <height>420</height>
    </rect>
   </property>
@@ -116,10 +116,10 @@
        </property>
        <property name="styleSheet">
         <string notr="true">font-family: orbitron;
-color: rgb(243, 243, 243);</string>
+color: #C4A000;</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffebc8;&quot;&gt;Wallet will connect to local daemon on default port. In case of no local daemon running it will launch built-in node.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;Wallet will connect to local daemon on default port. In case of no local daemon running it will launch built-in node.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -177,7 +177,7 @@ color: rgb(243, 243, 243);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">font-family: orbitron;
-color: rgb(243, 243, 243);</string>
+color: #C4A000;</string>
        </property>
        <property name="text">
         <string>Built-in embedded node will be used.</string>
@@ -415,7 +415,7 @@ color: rgb(243, 243, 243);</string>
 color: rgb(243, 243, 243);</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;Wallet will connect to a service node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 𝐅&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#c4a000;&quot;&gt;₲&lt;/span&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;Wallet will connect to a service node running in local or global network. Please select node or specify IP address or domain name and port. In this mode wallet sends 0.25% fee from each transaction to the node, but no more than 10 XF&lt;/span&gt;&lt;span style=&quot; color:#c4a000;&quot;&gt;₲.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>

@@ -47,16 +47,11 @@
      </property>
      <property name="font">
       <font>
-       <family>Dual</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">font-family: Dual;
-font-weight: bold;
-font-size: 14pt;</string>
+      <string notr="true">font-size: 12pt;</string>
      </property>
      <property name="readOnly">
       <bool>true</bool>
