@@ -179,16 +179,16 @@ void SendFrame::openUriClicked() {
 }
 
 void SendFrame::parsePaymentRequest(QString _request) {
-    if(_request.startsWith("DRGL://", Qt::CaseInsensitive))
+    if(_request.startsWith("fandomgold://", Qt::CaseInsensitive))
     {
-       _request.replace(0, 13, "DRGL:");
+       _request.replace(0, 13, "fandomgold:");
     }
-    if(!_request.startsWith("DRGL:", Qt::CaseInsensitive)) {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with DRGL:"), QtCriticalMsg));
+    if(!_request.startsWith("fandomgold:", Qt::CaseInsensitive)) {
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with fandomgold:"), QtCriticalMsg));
       return;
     }
 
-    if(_request.startsWith("DRGL:", Qt::CaseInsensitive))
+    if(_request.startsWith("fandomgold:", Qt::CaseInsensitive))
     {
       _request.remove(0, 11);
     }
