@@ -213,6 +213,22 @@
       </property>
      </widget>
     </item>
+    <item row="1" column="2">
+     <widget class="WalletGui::ReceiveFrame" name="m_receiveFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="5">
      <widget class="WalletGui::MiningFrame" name="m_miningFrame">
       <property name="sizePolicy">
@@ -224,30 +240,10 @@
       <property name="font">
        <font>
         <family>ZELDA</family>
-        <pointsize>14</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">font-family: &quot;ZELDA&quot;;</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="WalletGui::ReceiveFrame" name="m_receiveFrame">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -3051,6 +3047,9 @@ selection-background-color: rgb(237, 212, 0);</string>
    <property name="checkable">
     <bool>true</bool>
    </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="../../resources.qrc">
      <normaloff>:/icons/mining</normaloff>:/icons/mining</iconset>
@@ -3516,22 +3515,6 @@ selection-background-color: rgb(237, 212, 0);</string>
    </hints>
   </connection>
   <connection>
-   <sender>m_miningAction</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>m_miningFrame</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>862</x>
-     <y>322</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>m_addressBookAction</sender>
    <signal>toggled(bool)</signal>
    <receiver>m_addressBookFrame</receiver>
@@ -3704,6 +3687,22 @@ selection-background-color: rgb(237, 212, 0);</string>
     <hint type="destinationlabel">
      <x>489</x>
      <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>m_miningAction</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>m_miningFrame</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>862</x>
+     <y>322</y>
     </hint>
    </hints>
   </connection>
