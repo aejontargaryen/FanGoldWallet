@@ -129,7 +129,16 @@ QPushButton#m_sendButton:pressed {
 	border: 2px ridge #424242;
 	border-radius: 15px;
 }
-
+QPushButton#m_startButton, #m_stopButton, #m_startSolo, #m_stopSolo {
+	color: #edd400;
+	border-radius: 15px;
+}
+QPushButton#m_startButton:hover, #m_stopButton:hover, #m_startSolo:hover, #m_stopSolo:hover {
+	color: black;
+}
+QPushButton#m_startButton:disabled, #m_stopButton:disabled, #m_startSolo:disabled, #m_stopSolo:disabled {
+	color: #555;
+}
 QPushButton#m_csvButton:hover {
 	font-family: ZELDA;
 	font-weight: bold;
@@ -141,6 +150,7 @@ QPushButton#m_okButton:hover {
 	border: 2px inset #000000;
 	color: black;
 }
+
 
 /*
 ================================================LINE-TEXT-EDIT BARS=========================================
