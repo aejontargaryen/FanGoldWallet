@@ -9,6 +9,6 @@ Type=Application
 Icon=fandomgold
 MimeType=x-scheme-handler/fandomgold;
 Categories=Office;Finance;
-Version=2.0.3
+Version=3.0.2
 
 Name[en_US]=GoldWallet.desktop
