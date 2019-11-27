@@ -37,18 +37,15 @@ QMainWindow {
 QPushButton {
 	padding: 2px 8px;
 	color: #fff;
-	font-family: ZELDA;
 	font-size: 15px;
 }
 QToolButton {
 	padding: 0 5px;
-	font-family: ZELDA;
 	font-size: 12px;
 }
 
 
 QPushButton, QToolButton {
-	font-family: ZELDA;	
 	line-height: 1.8;
 	background: #000;
 	border: 2px outset qconicalgradient(cx:0.5, cy:0.5, angle:89.1, stop:0 rgba(136, 106, 22, 255), stop:0.104478 rgba(166, 140, 41, 255), stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.537313 rgba(168, 142, 42, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255), stop:0.800995 rgba(187, 156, 51, 255), stop:1 rgba(137, 108, 26, 255));
@@ -60,7 +57,6 @@ QPushButton, QToolButton {
 
 QPushButton:hover,
 QToolButton:hover {
-	font-family: ZELDA;	
 	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:89.1, stop:0 rgba(136, 106, 22, 255), stop:0.104478 rgba(166, 140, 41, 255), stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.537313 rgba(168, 142, 42, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255), stop:0.800995 rgba(187, 156, 51, 255), stop:1 rgba(137, 108, 26, 255));
 	border: 2px inset #000000;
 	color: black;
@@ -68,7 +64,6 @@ QToolButton:hover {
 
 QPushButton:pressed,
 QToolButton:pressed {
-	font-family: ZELDA;
 	color: #fff;
 	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:272.3, stop:0 rgba(136, 106, 22, 255), stop:0.119403 rgba(166, 140, 41, 255), stop:0.278607 rgba(202, 174, 68, 255), stop:0.537313 rgba(179, 151, 44, 255), stop:0.59204 rgba(187, 156, 51, 255), stop:0.800995 rgba(187, 156, 51, 255), stop:1 rgba(137, 108, 26, 255));
 	border: 1px inset #ffdd00;
@@ -97,7 +92,6 @@ QToolButton:focus:hover {
 QPushButton:disabled,
 QToolButton:disabled {
 	color: #000000;
-	font-family: ZELDA;
 	background-color: #444444;
 }
 
@@ -105,7 +99,6 @@ QPushButton::focus,
 QToolButton::focus {
 	background-color: #CFB53B;
 	border:2px outset black;
-	font-family: ZELDA;
 }
 QPushButton#m_sendButton {
 	color: gold;
@@ -140,12 +133,10 @@ QPushButton#m_startButton:disabled, #m_stopButton:disabled, #m_startSolo:disable
 	color: #555;
 }
 QPushButton#m_csvButton:hover {
-	font-family: ZELDA;
 	font-weight: bold;
 }
 
 QPushButton#m_okButton:hover {
-	font-family: ZELDA;
 	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:89.1, stop:0 rgba(136, 106, 22, 255), stop:0.104478 rgba(166, 140, 41, 255), stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.537313 rgba(168, 142, 42, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255), stop:0.800995 rgba(187, 156, 51, 255), stop:1 rgba(137, 108, 26, 255));
 	border: 2px inset #000000;
 	color: black;
@@ -330,7 +321,7 @@ QSlider::handle:horizontal {
 
 
 QCheckBox:unchecked { color: red; }
-QCheckBox:checked { color: #aeaeae; }
+QCheckBox:checked { color: goldenrod; }
 
 
 

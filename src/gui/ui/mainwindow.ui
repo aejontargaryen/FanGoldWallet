@@ -3045,10 +3045,10 @@ selection-background-color: rgb(237, 212, 0);</string>
   </action>
   <action name="m_miningAction">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="enabled">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="icon">
     <iconset resource="../../resources.qrc">
@@ -3061,6 +3061,12 @@ selection-background-color: rgb(237, 212, 0);</string>
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
    <property name="stylesheet" stdset="0">
     <string/>
@@ -3155,7 +3161,10 @@ selection-background-color: rgb(237, 212, 0);</string>
   </action>
   <action name="m_miningOnLaunchAction">
    <property name="checkable">
-    <bool>true</bool>
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Start &amp;pool mining automatically</string>
