@@ -208,7 +208,7 @@ elseif (UNIX)
     file(GLOB_RECURSE OBJC_SOURCES src/*.mm)
     set(SOURCES ${SOURCES} ${OBJC_SOURCES})
     set(PLATFORM_DIR OSX)
-    set(MACOSX_BUNDLE_INFO_STRING "GoldWallet")
+    set(MACOSX_BUNDLE_INFO_STRING "FANGO-wallet")
     set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
     set(MACOSX_BUNDLE_BUNDLE_NAME "FandomGOLD")
     set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
@@ -293,7 +293,7 @@ elseif (UNIX)
         set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <https://github.com/FandomGold/>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "GoldWallet
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "FANGO-wallet
  Fandom Gold is a rare peer-to-peer decentralized privacy
  cryptocurrency. It is open source, no one owns or controls it
  and everyone can take part.")
@@ -305,8 +305,8 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "MIT")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "GoldWallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "GoldWallet
+        set(CPACK_RPM_PACKAGE_SUMMARY "FANGO-wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "FANGO-wallet
  Fandom Gold is a rare peer-to-peer decentralized privacy
  cryptocurrency. It is open-source, no one owns or controls it
  and everyone can take part.")
