@@ -255,10 +255,10 @@ void SendFrame::sendClicked() {
         }
       }
 
-      // Dev donation
+      // Fandom Gold Project donation
       if (m_ui->donateCheckBox->isChecked()) {
           CryptoNote::WalletLegacyTransfer walletTransfer;
-          walletTransfer.address = "XFG4BGKSaPjZLKAuENnjtxAsahDWAmoFJXf9GpR9J78Jji6uBAwLzXM8ynT9ALZ5q8SGV86d162RLdhZRvuTbKsq8MhytyxSKv";
+          walletTransfer.address = "fango4Uxurg6s7mTd7r7aZeMxkdrsPNYQM4yPjmX6rTRh4VZx4QGqe3K29vKB9sEBxMztybnbj3ZvNgGS7ztzLZ88x83hM3GwYD";
           walletTransfer.amount = CurrencyAdapter::instance().parseAmount(m_ui->m_donateSpin->cleanText());
           walletTransfers.push_back(walletTransfer);
       }
