@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>980</width>
+    <width>1029</width>
     <height>590</height>
    </rect>
   </property>
@@ -351,6 +351,54 @@ color:rgb(211, 215, 207);</string>
      </layout>
     </widget>
    </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>200</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>30</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
    <item row="1" column="1">
     <widget class="QFrame" name="m_overviewWalletFrame">
      <property name="sizePolicy">
@@ -361,14 +409,14 @@ color:rgb(211, 215, 207);</string>
      </property>
      <property name="minimumSize">
       <size>
-       <width>400</width>
-       <height>200</height>
+       <width>500</width>
+       <height>300</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>500</width>
-       <height>250</height>
+       <width>550</width>
+       <height>300</height>
       </size>
      </property>
      <property name="palette">
@@ -915,7 +963,31 @@ color:rgb(238, 238, 236);</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Cinzel</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: transparent;
+font-family: &quot;Cinzel&quot;;
+color:rgb(238, 238, 236);</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dddddd;&quot;&gt;Available:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="indent">
+         <number>9</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
        <widget class="QLabel" name="label_6">
         <property name="font">
          <font>
@@ -936,30 +1008,6 @@ color:rgb(238, 238, 236);</string>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
-        </property>
-        <property name="indent">
-         <number>9</number>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="font">
-         <font>
-          <family>Cinzel</family>
-          <pointsize>16</pointsize>
-         </font>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: transparent;
-font-family: &quot;Cinzel&quot;;
-color:rgb(238, 238, 236);</string>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#dddddd;&quot;&gt;Available:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="indent">
          <number>9</number>
@@ -1176,6 +1224,12 @@ color:rgb(211, 215, 207);</string>
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="m_tickerLabel2">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <weight>75</weight>
@@ -1196,8 +1250,14 @@ font-weight: bold;
         </property>
        </widget>
       </item>
-      <item row="3" column="2">
+      <item row="4" column="2">
        <widget class="QLabel" name="m_tickerLabel3">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <weight>75</weight>
@@ -1209,6 +1269,34 @@ font-weight: bold;
 background-color: transparent;
 font-weight: bold;
 
+</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="indent">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="m_tickerLabel1">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qconicalgradient(cx:0.30307, cy:0.705, angle:205.6, stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.507463 rgba(187, 156, 51, 255), stop:0.537313 rgba(194, 177, 31, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255));
+background-color: transparent;
+font-weight: bold;
 </string>
         </property>
         <property name="text">
@@ -1411,29 +1499,7 @@ color:rgb(211, 215, 207);</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
-       <widget class="QLabel" name="m_tickerLabel1">
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: qconicalgradient(cx:0.30307, cy:0.705, angle:205.6, stop:0.169154 rgba(204, 181, 74, 255), stop:0.268657 rgba(235, 219, 102, 255), stop:0.333333 rgba(245, 236, 112, 255), stop:0.422886 rgba(209, 190, 76, 255), stop:0.487562 rgba(187, 156, 51, 255), stop:0.507463 rgba(187, 156, 51, 255), stop:0.537313 rgba(194, 177, 31, 255), stop:0.606965 rgba(202, 174, 68, 255), stop:0.666667 rgba(218, 202, 86, 255), stop:0.746269 rgba(208, 187, 73, 255));
-background-color: transparent;
-font-weight: bold;
-</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="indent">
-         <number>-1</number>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
+      <item row="4" column="1">
        <widget class="QLabel" name="m_totalBalanceLabel">
         <property name="palette">
          <palette>
@@ -1638,15 +1704,30 @@ color:rgb(238, 238, 236);</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0" colspan="2">
+      <item row="3" column="0" colspan="3">
        <widget class="Line" name="line">
         <property name="windowModality">
          <enum>Qt::NonModal</enum>
+        </property>
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <property name="minimumSize">
          <size>
           <width>400</width>
           <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>430</width>
+          <height>16777215</height>
          </size>
         </property>
         <property name="font">
@@ -1661,10 +1742,13 @@ color:rgb(238, 238, 236);</string>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: qlineargradient(spread:repeat, x1:1, y1:1, x2:1, y2:0, stop:0.0696517 rgba(46, 52, 54, 255), stop:0.308458 rgba(127, 127, 127, 255), stop:0.522388 rgba(162, 164, 158, 255), stop:0.781095 rgba(108, 109, 105, 255), stop:0.930348 rgba(47, 48, 46, 255));
-border-radius: 8px;</string>
+border-radius: 8px;
+margin-left: 10px;
+
+</string>
         </property>
         <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
+         <enum>QFrame::Sunken</enum>
         </property>
         <property name="lineWidth">
          <number>21</number>
@@ -1679,54 +1763,6 @@ border-radius: 8px;</string>
       </item>
      </layout>
     </widget>
-   </item>
-   <item row="2" column="1">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Expanding</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>300</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="1">
-    <spacer name="verticalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Maximum</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>30</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="0">
-    <spacer name="horizontalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Maximum</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>80</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
    </item>
   </layout>
  </widget>
