@@ -102,15 +102,18 @@ MainWindow::MainWindow() : QMainWindow(), m_ui(new Ui::MainWindow), m_trayIcon(n
   QFont font4;
   font4.setFamily("Capsuula");
   font4.setPixelSize(12);
-  m_ui->m_accountFrame->setFont(font4);
   int id5 = QFontDatabase::addApplicationFont(":/fonts/Unique");
   QFont font5;
   font5.setFamily("Unique");
   font5.setPixelSize(12);
-  int id6 = QFontDatabase::addApplicationFont(":/fonts/Dual");
+  int id6 = QFontDatabase::addApplicationFont(":/fonts/GothamB");
   QFont font6;
-  font6.setFamily("Dual");
+  font6.setFamily("GothamB");
   font6.setPixelSize(12);
+  int id7 = QFontDatabase::addApplicationFont(":/fonts/GothamL");
+  QFont font7;
+  font7.setFamily("GothamL");
+  font7.setPixelSize(12);
 }
 
 MainWindow::~MainWindow() {

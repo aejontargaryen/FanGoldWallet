@@ -83,7 +83,7 @@ font-weight: bold;</string>
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 13pt Dual;
+      <string notr="true">font: 12pt cinzel;
 </string>
      </property>
      <property name="text">

@@ -1,6 +1,8 @@
 // Copyright (c) 2011-2015 The Cryptonote developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016 The Karbowanec developers
+// Copyright (c) 2018-2019 Fandom Gold Project 
+
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -61,7 +63,7 @@ void Settings::load() {
     }
 
     if (!m_settings.contains(OPTION_CONNECTION)) {
-         m_connectionMode = "auto";
+         m_connectionMode = "remote";
     }
 
     if (!m_settings.contains(OPTION_DAEMON_PORT)) {
@@ -89,7 +91,7 @@ void Settings::load() {
   }
 
   QStringList defaultPoolList;
-  defaultPoolList << "crypto9coin.cf:18184" << "DRGL.online:8880" << "DRGL.cool-pool.net:4440";
+  defaultPoolList << "spookypool.nl:12555";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
     setMiningPoolList(QStringList() << defaultPoolList);
   } else {
@@ -103,7 +105,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "ice.zirtysperzys.info:18180" << "176.223.134.27:18180" << "fire.zirtysperzys.online:18180"; 
+  defaultNodesList << "176.223.134.27:18180" << "188.226.177.187:18180" << "xfg.fandroid.net:18180" << "104.236.0.16:18180" << "178.128.164.245:18180"; 
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
@@ -233,7 +235,7 @@ QString Settings::getConnection() const {
         connection = m_settings.value(OPTION_CONNECTION).toString();
     }
     else {
-    connection = "auto"; // default
+    connection = "remote"; // default
     }
     return connection;
 }

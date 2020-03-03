@@ -57,7 +57,7 @@ MiningFrame::~MiningFrame() {
 void MiningFrame::enableSolo() {
   m_sychronized = true;
   if (!m_solo_mining) {
-    m_ui->m_startSolo->setEnabled(true);
+    m_ui->m_startSolo->setDisabled(true);
   }
 }
 
